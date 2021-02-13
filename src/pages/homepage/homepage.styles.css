@@ -1,0 +1,61 @@
+.header h1 {
+    text-align: center;
+}
+
+.header {
+    margin-top: 4rem;
+}
+
+.tab-menu {
+    display: flex;
+    justify-content: center;
+}
+.tab-menu a {
+    text-align: center;
+    padding:3rem;
+    text-decoration: none;
+    color:#707070;
+}
+
+.products-content {
+    width:80%;
+    margin:0 auto;
+}
+
+.iphones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.web-content {
+    margin-top: 0rem;
+}
+
+
+.about-us {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    height:80vh;
+    margin-top: 5rem;
+}
+
+.about-info {
+    margin-top: 4rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    width:40%;
+}
+
+.about-image {
+    margin-top: 3.5rem;
+    width:50%;
+    height: auto;
+    margin-right: 5rem;
+}
+
+.about-image img {
+    width:100%;
+}

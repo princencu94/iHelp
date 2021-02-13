@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="208px" height="208px" viewBox="0 0 208 208" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>phone</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="103.842661%" y1="0%" x2="0%" y2="122.231574%" id="linearGradient-1">
+            <stop stop-color="#E0E0E0" offset="0%"></stop>
+            <stop stop-color="#F0F0F0" stop-opacity="0.493744339" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="217.221456%" y1="-20.5828631%" x2="0%" y2="122.231574%" id="linearGradient-2">
+            <stop stop-color="#E0E0E0" offset="0%"></stop>
+            <stop stop-color="#F0F0F0" stop-opacity="0.493744339" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="phone" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="208" height="208"></rect>
+        <g id="Phone_icon" transform="translate(68.000000, 33.000000)">
+            <rect id="Rectangle-22" stroke="#5E5E5E" stroke-width="3" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="74" height="143" rx="5.2488"></rect>
+            <path d="M7.55102041,124.936842 L69.4693878,124.936842 L69.4693878,135.484211 C69.4693878,137.141065 68.126242,138.484211 66.4693878,138.484211 L14.6240441,138.484211 L7.55102041,124.936842 Z" id="Rectangle-22" fill-opacity="0.9" fill="url(#linearGradient-1)"></path>
+            <path d="M16.6122449,52.6842105 L51.3469388,70.7473684" id="Stroke-8" stroke="#5E5E5E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M28.6938776,73.7578947 L57.3877551,88.8105263" id="Stroke-8-Copy" stroke="#5E5E5E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <rect id="Rectangle-9" fill="#5E5E5E" x="27.1836735" y="132.463158" width="21.1428571" height="1.50526316" rx="0.752631579"></rect>
+            <path d="M9.04081633,4.51578947 L66.4693878,4.51578947 C68.126242,4.51578947 69.4693878,5.85893522 69.4693878,7.51578947 L69.4693878,18.0631579 L6.04081633,18.0631579 L6.04081633,7.51578947 C6.04081633,5.85893522 7.38396208,4.51578947 9.04081633,4.51578947 Z" id="Rectangle-22" fill-opacity="0.9" fill="url(#linearGradient-2)"></path>
+            <rect id="Rectangle-9" fill="#5E5E5E" x="27.1836735" y="9.03157895" width="21.1428571" height="3.01052632" rx="1.50526316"></rect>
+            <ellipse id="Oval-4" fill="#5E5E5E" cx="21.1428571" cy="10.5368421" rx="1.51020408" ry="1.50526316"></ellipse>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,87 @@
+.nav-container {
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 3;
+}
+
+.logo {
+    margin-left: 5rem;
+    color: white;
+    width:80%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 30px;
+    margin-right: 5rem;
+    width:80%;
+}
+
+.nav a {
+    padding-left: 40px;
+    text-decoration: none;
+    color: white;
+}
+
+.products-link {
+    position: relative;
+    display: inline-block;
+    width:20%;
+}
+
+.services-link {
+    width:20%;
+}
+
+.products-dropdown {
+    display: none;
+    position: absolute;
+    top:3.5rem;
+    right:0rem;
+    background-color: #000;
+    width: 560px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 5;
+}
+
+.products-dropdown a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.products-dropdown a:hover {background-color: red;}
+
+/* Show the dropdown menu on hover */
+.products-link:hover .products-dropdown {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/* .products-link:hover  {border-bottom: 1px solid #F2F2F2;} */
+
+
+.products-display-flex {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+
+.cart-link {
+    width:10%;
+}
+.cart-link img {
+    width:35%;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+.logo a {
+    text-decoration: none;
+    color:white;
+}

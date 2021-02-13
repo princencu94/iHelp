@@ -1,0 +1,15 @@
+.sponsor-container {
+    margin-top: 3rem;
+}
+
+.sponsor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.sponsor img {
+    width:15%;
+}

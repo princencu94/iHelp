@@ -1,0 +1,41 @@
+.product-overview-container {
+    margin-top: 0rem;
+}
+.product-overview {
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.product-overview-image {
+    width:60%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product-overview-image img {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.product-overview-detail {
+    width:40%;
+}
+
+.detail-line {
+    opacity: 0.4;
+}
+
+.product-overview-buttons button {
+    background-color: black;
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding:1rem 1rem 1rem 1rem;
+    cursor: pointer;
+}
+

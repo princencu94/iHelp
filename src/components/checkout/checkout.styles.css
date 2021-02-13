@@ -1,0 +1,15 @@
+.checkout-container {
+    background-color:#F2F2F2;
+    color:white;
+    position:absolute;
+    right:2rem;
+    bottom:14.3rem;
+    width:20%;
+    border:1px solid black;
+    min-height:50%;
+}
+
+.checkout-container p {
+    text-align: center;
+    color:black;
+}

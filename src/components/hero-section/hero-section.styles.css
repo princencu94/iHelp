@@ -1,0 +1,69 @@
+.hero-container {
+    height: 100vh;
+    width: 100%;
+}
+
+.hero-container img {
+    height:100%;
+    width: 100%;
+}
+
+.hero-info {
+    margin-left: 5rem;
+    position: relative;
+    bottom: 20rem;
+    width:40%;
+    z-index: 1;
+}
+
+.hero-info h1 {
+    text-transform: uppercase;
+}
+
+.hero-info p {
+    font-size: 20px;
+}
+
+.products {
+    padding:1rem 2rem 1rem 2rem;
+    background-color: black;
+    color: white;
+    border: none;
+    margin-right: 2rem;
+}
+
+.repairs {
+    padding:0.9rem 1.3rem 0.9rem 1.3rem;
+    background-color: transparent;
+    border: 1px solid black;
+
+}
+
+.hero-find-us {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height: 20%;
+    background-color: #F2F2F2;
+    margin-top: -14rem;
+    justify-content: space-evenly;
+}
+
+.hero-find-us img{
+    width:80px;
+    height: 60px;
+    padding-top: 1.5rem;
+    padding-right: 1rem;
+}
+
+
+.find-us-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width:15%;
+}
+
+.find-us-display p {
+    margin-top: 2.5rem;
+}
