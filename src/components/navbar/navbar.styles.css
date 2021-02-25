@@ -85,3 +85,36 @@
     text-decoration: none;
     color:white;
 }
+
+.hamburger {
+    color: white;
+    font-size: 2.5em !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        margin-left: 1rem;
+        
+    }
+    
+    .nav {
+        margin-right: 1rem;
+  
+    }
+
+    .mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .cart-link {
+        width:20%;
+        padding-right: 4rem;
+    }
+    .cart-link img {
+        width:80%;
+        
+        cursor: pointer;
+    }
+}

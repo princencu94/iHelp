@@ -42,6 +42,12 @@
     height: 30vh;
     background-color: black;
 }
+.social-media {
+    margin-top:-1rem;
+}
+.social-icon-size {
+    font-size: 15px !important;
+}
 
 .social-icon {
     padding-left:3rem;
@@ -55,4 +61,62 @@
 .footer-bottom p {
     margin-left: 5rem;
     font-size: 13px;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo-section {
+        width:40%;
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+
+    .footer-top {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: auto;
+        background-color: black;
+        flex-wrap: wrap;
+        padding-bottom:3rem;
+    }
+
+    .logo-section h2 {
+        text-align: center;
+    }
+
+    .social-media {
+        margin-top:-1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo-section {
+        width:100%;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .discover-section {
+        width:45%;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .customer-section {
+        width:45%;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-bottom p {
+        margin-left: 0rem;
+        text-align: center;
+        font-size: 13px;
+    }
 }

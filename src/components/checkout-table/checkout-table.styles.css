@@ -1,0 +1,52 @@
+.checkout-page-table {
+    margin-top: 2rem;
+    width:50%;
+    margin-left: 1rem;
+}
+
+.quantity {
+    vertical-align: top;
+}
+
+.total {
+    margin-top: 5rem;
+}
+
+.table-icons {
+    cursor: pointer;
+}
+
+.proceed-button {
+    margin-top: 1.5rem;
+}
+
+.proceed-button a {
+    
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    color:white;
+    padding: 0.7rem 2rem 0.7rem 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .checkout-page-table {
+        margin-top: 2rem;
+        width:92%;
+        margin-left: 1rem;
+
+    }
+
+    .total {
+        margin-top: 2rem;
+    }
+
+    .table-icons {
+        cursor: pointer;
+    }
+    
+    .quantity {
+        vertical-align: bottom;
+    }
+    
+}

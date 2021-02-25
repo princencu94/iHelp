@@ -1,0 +1,23 @@
+.checkout-page-header {
+    margin-left: 5rem;
+}
+
+.checkout-page-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 600px) {
+    .checkout-page-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .checkout-page-header {
+        margin-left: 1rem;
+        text-align: center;
+    }
+    
+}

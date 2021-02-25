@@ -1,0 +1,21 @@
+.mobile-nav-container{
+   width:100%;
+}
+
+.mobile-links {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-top: 5rem;
+}
+
+.mobile-links a {
+   text-decoration: none;
+   color: black;
+   font-size: 40px;
+}
+
+.mobile-links a:hover {
+   color: #f6f6f6;
+}

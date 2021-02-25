@@ -4664,6 +4664,11 @@ elliptic@^6.5.3:
     minimalistic-assert "^1.0.1"
     minimalistic-crypto-utils "^1.0.1"
 
+emailjs-com@^2.6.4:
+  version "2.6.4"
+  resolved "https://registry.yarnpkg.com/emailjs-com/-/emailjs-com-2.6.4.tgz#c3bac8f7ee58d536ab34923e73013ad39f299f46"
+  integrity sha512-4G8rxq+1mbL4rGntMa9tqNJ4N9BhuCl8lFJASDHxZVXeC82ivwL6qw+Zu48cAWHpNK2/F3vScaAZk8zoTAfiAA==
+
 emittery@^0.7.1:
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/emittery/-/emittery-0.7.2.tgz#25595908e13af0f5674ab419396e2fb394cdfa82"
@@ -11458,6 +11463,11 @@ type@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/type/-/type-2.1.0.tgz#9bdc22c648cf8cf86dd23d32336a41cfb6475e3f"
   integrity sha512-G9absDWvhAWCV2gmF1zKud3OyC61nZDwWvBL2DApaVFogI07CprggiQAOOjvp2NRjYWFzPyu7vwtDrQFq8jeSA==
+
+typed-responsive-react@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/typed-responsive-react/-/typed-responsive-react-1.0.2.tgz#8f810dfcd0a0be72ba4a02609658a9b7d0699e53"
+  integrity sha512-69zHPtOcT9Azl8nWj9AsYfycZvgfgq/aIWQa1b7jllP3kLzvrA1bfWH+8xNfeZfaDJvm94vkHw4zKQCJ/95GLw==
 
 typedarray-to-buffer@^3.1.5:
   version "3.1.5"

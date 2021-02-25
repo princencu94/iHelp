@@ -2,10 +2,14 @@ import React from 'react';
 import './product-overview.styles.css';
 import { connect } from 'react-redux';
 
+
 import { addItem } from '../../redux/cart/cart-actions';
 
 const ProductOverview = ({ item, addItem }) => {
-    const { title, image, description, price, memory, stock, sn } = item;
+    const { title, image, description, price, memory } = item;
+
+    
+
     return (
         <div className="product-overview-container">
             <div className="product-overview">
@@ -15,17 +19,18 @@ const ProductOverview = ({ item, addItem }) => {
 
                 <div className="product-overview-detail">
                     <h1>{title}</h1>
-                    <p>{description}</p>
-                    <p className="detail-line"><span>{memory} Gig</span> <span>{stock} in Stock</span></p>
+                    <div>
+                        <p>{description}</p>
+                    </div>
+                    <p className="detail-line"><span>{memory === 0 ? null : memory}</span> <span>in Stock</span></p>
                     <h3>${price}</h3>
 
                     <div className="product-overview-buttons"> 
-                        <button onClick={(item) => addItem(item)}>Add to Cart</button>
+                        <button onClick={() => addItem(item)}>Add to Cart</button>
                     </div>
                 </div>
-
-                
             </div>
+
         </div>
     )
 }

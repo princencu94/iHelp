@@ -3,7 +3,7 @@ import './product.styles.css';
 import { Link } from 'react-router-dom';
 
 const Product = ({ product }) => {
-    const { title, newProduct, image,sn } = product
+    const { title, newProduct, image,sn, memory } = product
     return (
         <div className="product-container">
             <Link to={`/single-product/${sn}`}>
@@ -13,7 +13,7 @@ const Product = ({ product }) => {
                     </div>
                     <div className="product-body">
                         <p>{newProduct ? `New` : null}</p>
-                        <h4>{title}</h4>
+                        <h4><span>{title}</span> <span>{memory === 0 ? null : memory}</span></h4>
                     </div>
                 </div>
             </Link>

@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './homepage.styles.css';
 
+import { productsFetchStartAsnyc } from '../../redux/product/product-actions';
+import { connect } from 'react-redux';
+
 import CircularProgress from '@material-ui/core/CircularProgress';
 import { Link } from 'react-router-dom';
 import { firestore } from '../../firebase/firebase-utils';
@@ -13,12 +16,16 @@ import Sponsor from '../../components/sponsors/sponsors.component'
 import Navbar from '../../components/navbar/navbar.component';
 
 
-const Homepage = () => {
+const Homepage = ({productsFetchStartAsnyc}) => {
 
     const [allProducts, setAllProducts] = useState();
     const [isLoading, setLoading] = useState();
+
+
     useEffect(() => {
-        const Devices= firestore.collection("devices");
+        productsFetchStartAsnyc();
+
+       const Devices= firestore.collection("featured");
 
         Devices
         .get()
@@ -33,9 +40,7 @@ const Homepage = () => {
         } else {
             setLoading(true);
         }
-        console.log(allProducts)
         });
-
     }, [])
     return (
         <div className="homepage">
@@ -48,12 +53,12 @@ const Homepage = () => {
 
                 <div className="tab-menu">
                     <Link to="">iPhone</Link>
-                    <Link to="">Mac</Link>
+                    <Link to="">iWatch</Link>
                     <Link to="">Accessories</Link>
                 </div>
 
                 <div className="products-content">
-                    <div className="iphones">
+                    <div className="featured-products">
                         {
                             isLoading === false ?
                             allProducts.map(item =>
@@ -89,5 +94,7 @@ const Homepage = () => {
     )
 }
 
-
-export default Homepage;
+const mapDispatchToProps = dispatch => ({
+    productsFetchStartAsnyc: () => dispatch(productsFetchStartAsnyc())
+})
+export default connect(null, mapDispatchToProps)(Homepage);

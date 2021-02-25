@@ -1,0 +1,19 @@
+.single-product-back {
+    margin-left: 5rem;
+    margin-top: 3rem;
+}
+
+.single-product-back a{
+    color: black;
+}
+
+.single-product-back a:hover {
+    color:#777E9B;
+}
+
+@media only screen and (max-width: 600px) {
+    .single-product-back {
+        margin-left: 1rem;
+        margin-top: 3rem;
+    }
+}

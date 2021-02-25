@@ -22,7 +22,7 @@
     margin:0 auto;
 }
 
-.iphones {
+.featured-products {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -58,4 +58,57 @@
 
 .about-image img {
     width:100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        margin-top: 0rem;
+    }
+
+    .header h1 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .tab-menu {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 13px;
+    }
+
+    .tab-menu a {
+        text-align: center;
+        padding: 0rem ;
+        text-decoration: none;
+        color: #707070;
+    }
+
+    .products-content {
+        width:100%;
+        margin:0 auto;
+    }
+
+    .about-us {
+        background-color: #F2F2F2;
+        display: flex;
+        flex-direction: column;
+        height:auto;
+        margin-top: 5rem;
+    }
+
+    .about-info {
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width:auto;
+        text-align: center;
+    }
+    
+    .about-image {
+        margin-top: 1rem;
+        width:auto;
+        height: auto;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
 }

@@ -1,0 +1,58 @@
+.checkout-form-container {
+    width:35%;
+    margin-top: 2rem;
+}
+
+.checkout-form-container form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.checkout-form-container form input[type=text] { 
+    padding:1rem;
+    margin-bottom: 1rem;
+    width:80%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.checkout-form-container form button {
+    padding:1rem;
+    border:none;
+    background-color: #000;
+    color:#fff;
+    width:87%;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .checkout-form-container {
+        width:100%;
+        margin-top: 2rem;
+    }
+
+    .checkout-form-container form input[type=text] { 
+        padding:1rem;
+        margin-bottom: 1rem;
+        width:91%;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .checkout-form-container form button {
+        padding:1rem;
+        border:none;
+        background-color: #000;
+        color:#fff;
+        width:100%;
+        font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+    }
+
+    .checkout-form-container p {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-size: 14px;
+        text-align: center;
+    }
+}

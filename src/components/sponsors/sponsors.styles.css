@@ -13,3 +13,23 @@
 .sponsor img {
     width:15%;
 }
+
+@media only screen and (max-width: 600px) {
+    .sponsor {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .sponsor img {
+        width:40%;
+    }
+
+    .sponsor-container {
+        margin-top: 3rem;
+        width:100%;
+    }
+}

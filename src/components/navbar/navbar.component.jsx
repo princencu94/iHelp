@@ -6,10 +6,25 @@ import { Link } from 'react-router-dom';
 import phone from '../../assets/phone.svg';
 import cartIcon from '../../assets/shopping-cart.svg';
 import Checkout from '../checkout/checkout.component';
+import Badge from '@material-ui/core/Badge';
+import DehazeIcon from '@material-ui/icons/Dehaze';
+import MobileNavbar from '../mobile-nav/mobile-nav.component';
+
+import {
+    Responsive
+} from 'typed-responsive-react';
 
 import { toggleHiddenCart } from '../../redux/cart/cart-actions';
 
-const Navbar = ({ toggleCart, toggleHiddenCart}) => {
+const Navbar = ({ toggleCart, toggleHiddenCart, totalItems}) => {
+    const [open, setOpen] = React.useState(false);
+
+    const handleClickOpen = () => {
+      setOpen(true);
+    };
+    const handleClose = () => {
+      setOpen(false);
+    };
     return (
         <div className="nav-container">
             <div className="logo">
@@ -17,6 +32,7 @@ const Navbar = ({ toggleCart, toggleHiddenCart}) => {
             </div>
 
             <div className="nav">
+                <Responsive displayIn={["laptop"]}>
                 <div className="products-link">
                     <Link to="/products">PRODUCTS</Link>
                     <div className="products-dropdown">
@@ -36,7 +52,10 @@ const Navbar = ({ toggleCart, toggleHiddenCart}) => {
                     <Link to="/services">SERVICES</Link>
                 </div>
                 <div className="cart-link">
+                <Badge badgeContent={totalItems} color="secondary">
                     <img src={cartIcon} alt="Cart Icon" onClick={toggleHiddenCart}/>
+                </Badge>
+                    
                     {
                         toggleCart == true ?
                         <Checkout/>
@@ -44,7 +63,25 @@ const Navbar = ({ toggleCart, toggleHiddenCart}) => {
                     }
                    
                 </div>
-               
+                </Responsive>
+                <Responsive displayIn={["mobile", "tablet"]}>
+                    <div className="mobile">
+                        <div className="cart-link">
+                            <Badge badgeContent={totalItems} color="secondary">
+                                <img src={cartIcon} alt="Cart Icon" onClick={toggleHiddenCart}/>
+                            </Badge>
+                                
+                                {
+                                    toggleCart == true ?
+                                    <Checkout/>
+                                    : null
+                                }
+                    
+                        </div>
+                        <DehazeIcon className="hamburger" onClick={handleClickOpen}/>
+                    </div>
+                    <MobileNavbar handleClose={handleClose} open={open} />
+                </Responsive>
             </div>
         </div>
     )
@@ -55,7 +92,8 @@ const mapDispatchToProps = dispatch => ({
 })
 
 const mapStateToProps = state => ({
-    toggleCart: state.cart.toggleCart
+    toggleCart: state.cart.toggleCart,
+    totalItems: state.cart.cartItems.reduce((accumulatedQuantity, cartItem) => accumulatedQuantity + cartItem.quantity, 0)
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Navbar);

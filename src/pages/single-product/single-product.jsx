@@ -1,51 +1,46 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import './single-products.styles.css';
+import { connect } from 'react-redux';
 import {
-    useParams
-  } from "react-router-dom";
+    useParams,
+    Link
+} from "react-router-dom";
 
 
-import { firestore } from '../../firebase/firebase-utils';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import ProductOverview from '../../components/product-overview/product-overview.component';
 import Navbar from '../../components/navbar/navbar.component';
+import RelatedItems from '../../components/related-items/related-items.component';
 
-const SingleProduct = () => {
-    const [singleProduct, setSingleProduct] = useState({});
-    const [isLoading, setLoading] = useState(true)
+const SingleProduct = ({products, isFetchingProducts}) => {
+   
+
     let { id } = useParams();
-
-
-    useEffect(() => {
-        firestore.collection("devices").where("sn", "==", id)
-            .get()
-            .then((querySnapshot) => {
-                querySnapshot.forEach((doc) => {
-                    // doc.data() is never undefined for query doc snapshots
-                    console.log(doc.id, " => ", doc.data());
-                    if(doc.data() !== undefined) {
-                        setLoading(false);
-                        setSingleProduct(doc.data());
-                    }
-                });
-            })
-            .catch((error) => {
-                console.log("Error getting documents: ", error);
-            });
-
-    }, [])
+    const singleProduct = products.find(product => product.sn === id);
+    const related = singleProduct.related;
     return (
         <div className="single-product-container">
             <Navbar/>
+            <div className="single-product-back">
+                <Link to="/products"> All Products</Link>
+            </div>
             {
 
-                isLoading === false ? 
+                isFetchingProducts ? 
                 <ProductOverview item={singleProduct}/>
                 :
                 <CircularProgress/> 
             }
-            
+            <RelatedItems related={related} />
         </div>
     )
 }
 
-export default SingleProduct;
+const mapStateToProps = state => ({
+    products: state.product.products,
+    isFetchingProducts: state.product.isFetchingProducts
+})
+
+
+
+export default connect(mapStateToProps)(SingleProduct);
