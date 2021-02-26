@@ -42,10 +42,11 @@
         color:white;
         position:absolute;
         right:0.5rem;
-        bottom:16rem;
+        bottom:10rem;
         width:95%;
         border:1px solid black;
         min-height:50%;
+        z-index: 1000;
     }
 
     .checkout-proceed {

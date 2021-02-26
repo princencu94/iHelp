@@ -54,7 +54,7 @@
     .hero-info {
         margin-left: 1rem;
         position: relative;
-        bottom: 15rem;
+        bottom: 13rem;
         width:40%;
         z-index: 1;
     }
@@ -71,7 +71,7 @@
     .hero-buttons {
         display: flex;
         flex-direction: row;
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     .products-button {
