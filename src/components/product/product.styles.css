@@ -44,4 +44,9 @@
         border-bottom: 1px solid #707070;
         margin: 10px;
     }
+
+    .product-image img {
+        width:60%;
+        height: 100% !important;
+    }
 }
