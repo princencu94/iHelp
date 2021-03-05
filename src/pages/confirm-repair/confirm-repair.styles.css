@@ -1,0 +1,31 @@
+.confirm-repair-header {
+    width:50%;
+    margin: 0 auto;
+}
+
+.confirm-repair-header h1, p{
+    text-align: center;
+}
+
+.confirm-repair-content {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    display: flex;
+    flex-direction: row;
+    margin-top:3rem;
+    justify-content: space-evenly;
+}
+
+.confirm-repair-forms {
+    width:70%;
+}
+
+.confirm-repair-info {
+    width:25%;
+    background-color: black;
+}
+
+.vertical-line {
+    width:5%;
+    border-left: 1px solid black;
+}

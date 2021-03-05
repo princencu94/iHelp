@@ -14,7 +14,7 @@ const CheckoutForm = ({ cartItems, cartTotal }) => {
     
     const [order, setOrder] = useState({name:"", phone:"", address:"", orders:JSON.stringify(results), total:cartTotal})
     
-
+    console.log(cartItems.length);
     
 
     const handleChange = (event) => {
@@ -40,7 +40,7 @@ const CheckoutForm = ({ cartItems, cartTotal }) => {
                 <input type="text" name="name" placeholder="name"  onChange={handleChange} />
                 <input type="text" name="phone" placeholder="phone" onChange={handleChange} />
                 <input type="text" name="address" placeholder="address" onChange={handleChange}/>
-                <button type="submit">Proceed</button>
+                <button type="submit" disabled={cartItems.length !== 0 ? false: true}>Proceed</button>
             </form>
 
             <p>

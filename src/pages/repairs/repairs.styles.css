@@ -1,0 +1,174 @@
+
+.repairs-select-device {
+    background-color: #f2f2f2;
+    height:90vh;  
+}
+
+.next-button a {
+    text-decoration: none;
+    color: black;
+    margin-top: 2rem;
+}
+
+.next-button p {
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.repairs-page-content form, button{
+    margin-left: 5rem;
+}
+
+.device-select-card {
+    width:50%;
+    margin:0 auto;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+.device-select-card form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.device-select-card form select {
+    padding:10px;
+    margin-bottom: 0.5rem;
+    width:300px;
+    font-family: 'Poppins', sans-serif;
+}
+.device-type {
+    border-right: 1px solid white;
+}
+
+caption {
+    color: white;
+    text-align: center;
+}
+
+
+.repairs-select-issue {
+    background-color: red;
+    height:90vh;
+    margin-top: -1.5rem;
+}
+
+.issue-select-card {
+    width:20%;
+    margin:0 auto;
+    display: block;
+}
+
+.issue-select-card h3 { 
+    text-align: center;
+}
+
+.issue-select-card select {
+    padding:10px;
+    margin-bottom: 0.5rem;
+    width:300px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.device-issue img {
+    width:300px;
+    height:250px;
+    border-radius:10px;
+}
+
+
+
+.form-display {
+    display: none;
+}
+
+.form-display-select {
+    display: inline-block;
+}
+
+.repairs-header {
+    width:60%;
+    margin:0 auto;
+    margin-bottom: 3rem;
+}
+
+.repairs-header h1 {
+    text-align: center;
+    padding-top: 3rem !important;
+}
+
+.repairs-header p {
+    text-align: center;
+}
+
+
+.repairs-select-location {
+    background-color: #575759;
+    height:90vh;
+    margin-top: -1.5rem;
+}
+
+
+.location-select-card {
+    width:20%;
+    margin:0 auto;
+    display: block;
+}
+
+.location-select-card h3 { 
+    text-align: center;
+}
+
+.location-select-card select {
+    padding:10px;
+    margin-bottom: 0.5rem;
+    width:300px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.repairs-next-buttons {
+    width:40%;
+    margin:0 auto;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -2rem;
+}
+
+.repairs-next-buttons a {
+    background-color: #575759;
+    padding:0.4rem 2rem 0.4rem 2rem;
+    opacity: 0.8;
+    width:140px;
+    text-align: center;
+}
+
+.repairs-next-buttons a:hover {
+    opacity: 1;
+}
+
+.repairs-next-buttons button {
+    background-color: black;
+    color:white;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    padding:0.1rem 2rem 0.1rem 2rem;
+    height:40px;
+    margin-top: 2rem;
+    cursor: pointer;
+    opacity: 0.8;
+    width:200px;
+    font-size: 14px;
+} 
+
+
+.repairs-next-buttons button:hover {
+    opacity:1;
+}
+

@@ -1,0 +1,63 @@
+.repairs-form-customer {
+    background-color: #e6dfdf;
+    width:80%;
+    border-radius: 20px;
+}
+
+
+.repairs-form-address {
+    background-color: #e6dfdf;
+    width:80%;
+    border-radius: 20px;
+    margin-top: 2rem;
+}
+
+.repairs-form-header {
+    margin-left: 1rem;
+    padding-top: 0.1rem;
+}
+
+.form-group input[type=text], input[type=email] {
+    border: none;
+    width:44%;
+    margin-left:1rem;
+    font-family: 'Poppins', sans-serif;
+    padding:1rem 0rem 1rem 1rem;
+}
+
+.form-group {
+    margin-top: 1rem;
+}
+
+.form-group-bottom-margin {
+    padding-bottom:3rem;
+}
+
+.form-single input[type=text] {
+    border: none;
+    width:93%;
+    margin-left:1rem;
+    font-family: 'Poppins', sans-serif;
+    padding:1rem 0rem 1rem 1rem;
+}
+
+
+.form-single-margin-bottom {
+    margin-bottom: 1rem;
+}
+
+.form-button {
+    margin-top: 2rem;
+    margin-left:-5rem !important
+}
+
+.form-button button { 
+    border:none;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    width:73%;
+    padding:1rem 0rem 1rem 0rem;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}

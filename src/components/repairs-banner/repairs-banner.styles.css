@@ -1,0 +1,24 @@
+.repairs-banner {
+    width:60%;
+    margin:0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.repairs-banner-header h1 {
+    text-align: center;
+}
+
+.repairs-banner-header p {
+    text-align: center;
+}
+
+.repairs-banner-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.h4-margin h4 {
+    margin-top: 0.5rem;
+}
