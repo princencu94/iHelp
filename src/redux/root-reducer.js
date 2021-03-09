@@ -3,6 +3,7 @@ import { persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import cartReducer from './cart/cart-reducer';
 import productReducer from './product/product-reducer';
+import repairReducer from './repairs/repair-reducer';
 
 
 
@@ -14,7 +15,8 @@ const persistConfig = {
 
 const rootReducer = combineReducers({
     cart:cartReducer,
-    product:productReducer
+    product:productReducer,
+    repair:repairReducer
 });
 
 export default persistReducer(persistConfig, rootReducer);

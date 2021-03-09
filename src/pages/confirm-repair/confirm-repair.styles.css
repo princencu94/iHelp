@@ -3,7 +3,11 @@
     margin: 0 auto;
 }
 
-.confirm-repair-header h1, p{
+.confirm-repair-header h1, p {
+    text-align: center;
+}
+
+.confirm-repair-header p {
     text-align: center;
 }
 
@@ -22,10 +26,77 @@
 
 .confirm-repair-info {
     width:25%;
-    background-color: black;
 }
 
 .vertical-line {
     width:5%;
     border-left: 1px solid black;
+}
+
+.repair-summary-card {
+    background-color: #E6DFDF;
+    border-radius: 20px;
+}
+
+.summary-card-info:first-child {
+    padding-top: 1.5rem;
+}
+
+.summary-card-info {
+    margin-left: 1rem;
+}
+
+.summary-card-info:last-child {
+    padding-bottom: 1rem;
+}
+
+.summary-card-info h4, p {
+    text-align: left;
+}
+
+.summary-card-info p {
+    margin-top: -25px;
+}
+
+@media only screen and (max-width: 600px) {
+    .confirm-repair-header {
+        width:90%;
+        margin: 0 auto;
+    }
+
+    .confirm-repair-header h1 {
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .confirm-repair-header p {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .confirm-repair-content {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        margin-top:3rem;
+        justify-content: space-evenly;
+    }
+
+    .confirm-repair-info {
+        width:100%;
+    }
+
+    .confirm-repair-forms {
+        width:100%;
+    }
+
+    .confirm-repair-info {
+        width:100%;
+    }
+
+    .confirm-repair-info h1 {
+        font-size: 25px;
+        text-align: center;
+    }
 }

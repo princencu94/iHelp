@@ -10,6 +10,8 @@
     "@testing-library/user-event": "^12.1.10",
     "emailjs-com": "^2.6.4",
     "firebase": "^8.2.6",
+    "formik": "^2.2.6",
+    "notistack": "^1.0.5",
     "react": "^17.0.1",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^17.0.1",

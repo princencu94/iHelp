@@ -22,3 +22,59 @@
 .h4-margin h4 {
     margin-top: 0.5rem;
 }
+
+@media only screen and (max-width: 600px) {
+    .repairs-banner {
+        width:90%;
+        margin:0 auto;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .repairs-banner-header h1 {
+       font-size: 25px;
+    }
+    
+    .repairs-banner-header p {
+        font-size: 14px;
+    }
+
+    .repairs-banner-images {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .repairs-image-1 {
+        padding-top:2px;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .repairs-image-1 img {
+        width: 100%;
+    }
+
+    .repairs-image-3 {
+        padding-top: 6px;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .repairs-image-3 img {
+        width: 100%;
+    }
+
+    .repairs-image-2 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .repairs-image-2 img {
+        width: 100%;
+    }
+
+    .h4-margin h4 {
+        margin-top: 0.5rem;
+        font-size: 12px;
+    }
+}

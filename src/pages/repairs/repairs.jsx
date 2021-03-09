@@ -10,8 +10,10 @@ import carryIn from '../../assets/carry-in.png';
 import cubside from '../../assets/car.png';
 import mail from '../../assets/mail.png';
 
+import { addRepair } from '../../redux/repairs/repair-actions';
+import { connect } from 'react-redux';
 
-const RepairsPage = ({ history }) => {
+const RepairsPage = ({ history,addRepair }) => {
 
     const [currentCollection, setCurrentCollection] = useState("")
     const handleChange = (event) => {
@@ -23,7 +25,7 @@ const RepairsPage = ({ history }) => {
         setCurrentIssue(event.target.value);
     }
 
-    const [currentPhone, setCurrentPhone] = useState(0)
+    const [currentPhone, setCurrentPhone] = useState("")
     const handlePhoneChange = (event) => {
         setCurrentPhone(event.target.value);
     }
@@ -40,7 +42,15 @@ const RepairsPage = ({ history }) => {
     }
 
     const handleAppointment =  () => {
+        const repairInfo = {
+            device:currentPhone,
+            issue:currentIssue,
+            location:currentLocation,
+            service:currentService
+        }
 
+        addRepair(repairInfo);
+        history.push('/confirm')
     }
 
 
@@ -61,20 +71,36 @@ const RepairsPage = ({ history }) => {
 
                         <form>
                             <select value={currentCollection} onChange={handleChange} >  
-                                <option value="">Select Device</option>  
+                                <option value="">Select Device Type</option>  
                                 <option value="iphone">Iphone</option>
-                                <option value="accessories">Accesories</option>
-                                <option value="apple-watch">Apple Watch</option>
-                                <option value="ipad">Ipad</option>
                             </select>
 
                             <select disabled={currentCollection !== "" ? false : true} value={currentPhone} onChange={handlePhoneChange}>    
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                            </select>
-                            
+                            <option value="">Select Device</option>
+                                <option value="iPhone 12 Pro Max">iPhone 12 Pro Max</option>
+                                <option value="iPhone 12 Pro">iPhone 12 Pro</option>
+                                <option value="iPhone 12">iPhone 12</option>
+                                <option value="iPhone 12 mini">iPhone 12 mini</option>
+                                <option value="iPhone SE 2nd">iPhone SE (2nd generation)</option>
+                                <option value="iPhone 11 Pro Max">iPhone 11 Pro Max</option>
+                                <option value="iPhone 11 Pro">iPhone 11 Pro</option>
+                                <option value="iPhone 11">iPhone 11</option>
+                                <option value="iPhone XS Max">iPhone XS Max</option>
+                                <option value="iPhone XS">iPhone XS</option>
+                                <option value="iPhone XR">iPhone XR</option>
+                                <option value="iPhone 8 Plus">iPhone 8 Plus</option>
+                                <option value="iPhone 8">iPhone 8</option>
+                                <option value="iPhone 7 Plus">iPhone 7 Plus</option>
+                                <option value="iPhone 7">iPhone 7</option>
+                                <option value="iPhone SE 1st">iPhone SE (1st generation)</option>
+                                <option value="iPhone 6s Plus">iPhone 6s Plus</option>
+                                <option value="iPhone 6s">iPhone 6s</option>
+                                <option value="iPhone 6 Plus">iPhone 6 Plus</option>
+                                <option value="iPhone 6">iPhone 6</option>
+                                <option value="iPhone 5s">iPhone 5s</option>
+                                <option value="iPhone 5c">iPhone 5c</option>
+                                <option value="iPhone 5">iPhone 5</option>
+                            </select>    
                         </form>
                     </div> 
                     <p><AnchorLink href='#issues'>Next</AnchorLink></p>
@@ -85,16 +111,56 @@ const RepairsPage = ({ history }) => {
                         <h1>Tell us what's broken.</h1>
                         <p>What seems to be the problem? If you don't know that's ok too.</p>
                     </div>
-                    <div className={currentPhone !== 0 ? "issue-select-card" : "form-display"}>
+                    <div className={currentPhone !== "" ? "issue-select-card" : "form-display"}>
                         <select value={currentIssue} onChange={handleIssueChange} > 
                                 <option value="">Select Issue</option>   
-                                <option value="https://i.ibb.co/h8rkQz3/broken.jpg">Broken</option>
-                                <option value="https://i.ibb.co/GVPxxTp/cover.jpg">Cover</option>
-                                <option value="https://i.ibb.co/41Q7Jkc/unknown.jpg">Other Issue</option>
+                                <option value="Broken Screen">Broken Screen</option>
+                                <option value="Cover">Cover</option>
+                                <option value="Battery">Battery</option>
+                                <option value="Other Issue">Other Issue</option>
                         </select>
 
                         <div className="device-issue">
-                            <img src={currentIssue} alt="issue" />
+
+                            
+                            {
+                                currentIssue === "Broken Screen" ?
+                                <div className="repair-img-card">
+                                    <div className="repair-img">
+                                        <img src="https://i.ibb.co/h8rkQz3/broken.jpg" alt="issue" />
+                                    </div>
+                                    <div className="repair-caption">
+                                        <h4>Broken Screen</h4>
+                                    </div>
+                                </div>
+                                : null
+                            }
+
+                            {
+                                currentIssue === "Cover" ?
+                                <div className="repair-img-card">
+                                    <div className="repair-img">
+                                        <img src="https://i.ibb.co/GVPxxTp/cover.jpg" alt="issue" />
+                                    </div>
+                                    <div className="repair-caption">
+                                        <h4>Back Housing</h4>
+                                    </div>
+                                </div>
+                                : null
+                            }
+
+                            {
+                                currentIssue === "Other Issue" ?
+                                <div className="repair-img-card">
+                                    <div className="repair-img">
+                                        <img src="https://i.ibb.co/41Q7Jkc/unknown.jpg" alt="issue" />
+                                    </div>
+                                    <div className="repair-caption">
+                                        <h4>l don't know</h4>
+                                    </div>
+                                </div>
+                                : null
+                            }   
                         </div>
                         <p><AnchorLink href='#location'>Next</AnchorLink></p>
                     </div> 
@@ -142,9 +208,9 @@ const RepairsPage = ({ history }) => {
                        
 
                         <div className="device-location">
-                            <img src={cubside} alt="Curbside" className={currentLocation === "curbside" ? true : "form-display"} />
-                            <img src={carryIn} alt="Carry In" className={currentLocation === "walkin" ? true : "form-display"}/>
-                            <img src={mail} alt="Mail In" className={currentLocation === "mail" ? true : "form-display"}/>
+                            <img src={cubside} alt="Curbside" className={currentService === "curbside" ? true : "form-display"} />
+                            <img src={carryIn} alt="Carry In" className={currentService === "walkin" ? true : "form-display"}/>
+                            <img src={mail} alt="Mail In" className={currentService === "mail" ? true : "form-display"}/>
                         </div>
                         <p><AnchorLink href='#next'>Next</AnchorLink></p>
                     </div> 
@@ -160,7 +226,7 @@ const RepairsPage = ({ history }) => {
                     
                         <div className="repairs-next-buttons">
                             <Link to="tel:+263772999638">Call Store</Link>
-                            <button onClick={() => history.push('/confirm')}>Make Appointment</button>
+                            <button onClick={handleAppointment}>Make Appointment</button>
                         </div>
                     </div>
                 
@@ -169,4 +235,8 @@ const RepairsPage = ({ history }) => {
     )
 }
 
-export default RepairsPage;
+const mapDispatchToProps = dispatch => ({
+    addRepair: (repair) => dispatch(addRepair(repair))
+})
+
+export default connect(null, mapDispatchToProps)(RepairsPage);
