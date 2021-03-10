@@ -13,7 +13,22 @@ import mail from '../../assets/mail.png';
 import { addRepair } from '../../redux/repairs/repair-actions';
 import { connect } from 'react-redux';
 
+import Stepper from '@material-ui/core/Stepper';
+import Step from '@material-ui/core/Step';
+import StepLabel from '@material-ui/core/StepLabel';
+
+function getSteps() {
+    return ['Select Your Device', 'Tell us whats Broken', 'Choose Location and Service', 'Finish'];
+}
+
 const RepairsPage = ({ history,addRepair }) => {
+
+    const [activeStep, setActiveStep] = React.useState(0);
+    const steps = getSteps();
+
+    const handleNext = () => {
+        setActiveStep((prevActiveStep) => prevActiveStep + 1);
+    };
 
     const [currentCollection, setCurrentCollection] = useState("")
     const handleChange = (event) => {
@@ -57,6 +72,17 @@ const RepairsPage = ({ history,addRepair }) => {
     return (
         <div className="repairs-page-container">
             <Navbar/>
+
+            <div className="stepper">
+            <Stepper activeStep={activeStep} alternativeLabel>
+                {steps.map((label) => (
+                <Step key={label}>
+                    <StepLabel>{label}</StepLabel>
+                </Step>
+                ))}
+            </Stepper>
+            </div>
+            
             <RepairsBanner/>
             <div className="repairs-page-content">
                 <div className="repairs-select-device next-button">
@@ -103,7 +129,7 @@ const RepairsPage = ({ history,addRepair }) => {
                             </select>    
                         </form>
                     </div> 
-                    <p><AnchorLink href='#issues'>Next</AnchorLink></p>
+                    <p><AnchorLink href='#issues' onClick={handleNext}>Next</AnchorLink></p>
                 </div>
 
                 <div className="repairs-select-issue next-button" id='issues'>
@@ -162,7 +188,7 @@ const RepairsPage = ({ history,addRepair }) => {
                                 : null
                             }   
                         </div>
-                        <p><AnchorLink href='#location'>Next</AnchorLink></p>
+                        <p><AnchorLink href='#location' onClick={handleNext}>Next</AnchorLink></p>
                     </div> 
                     
                 </div>
@@ -212,7 +238,7 @@ const RepairsPage = ({ history,addRepair }) => {
                             <img src={carryIn} alt="Carry In" className={currentService === "walkin" ? true : "form-display"}/>
                             <img src={mail} alt="Mail In" className={currentService === "mail" ? true : "form-display"}/>
                         </div>
-                        <p><AnchorLink href='#next'>Next</AnchorLink></p>
+                        <p><AnchorLink href='#next' onClick={handleNext}>Next</AnchorLink></p>
                     </div> 
                     
                 </div>
