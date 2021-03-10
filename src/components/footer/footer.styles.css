@@ -45,8 +45,14 @@
 .social-media {
     margin-top:-1rem;
 }
+
+.social-media:hover {
+    color:#F2F2F2;
+}
+
 .social-icon-size {
     font-size: 15px !important;
+    color: white;
 }
 
 .social-icon {
@@ -54,9 +60,6 @@
     padding-right: 3rem;
 }
 
-.footer-bottom {
-    background-color: #F2F2F2;
-}
 
 .footer-bottom p {
     margin-left: 5rem;

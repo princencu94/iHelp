@@ -96,12 +96,12 @@ const RepairsPage = ({ history,addRepair }) => {
                         </div>
 
                         <form>
-                            <select value={currentCollection} onChange={handleChange} >  
+                            <select value={currentCollection} onChange={handleChange}  >  
                                 <option value="">Select Device Type</option>  
                                 <option value="iphone">Iphone</option>
                             </select>
 
-                            <select disabled={currentCollection !== "" ? false : true} value={currentPhone} onChange={handlePhoneChange}>    
+                            <select disabled={currentCollection !== "" ? false : true} value={currentPhone} onChange={handlePhoneChange} >    
                             <option value="">Select Device</option>
                                 <option value="iPhone 12 Pro Max">iPhone 12 Pro Max</option>
                                 <option value="iPhone 12 Pro">iPhone 12 Pro</option>
@@ -199,38 +199,53 @@ const RepairsPage = ({ history,addRepair }) => {
                         <p>Let us know your location so we can provide the service options available in your area.</p>
                     </div>
                     <div className={currentIssue !== "" ? "location-select-card" : "form-display"}>
-                        <select value={currentLocation} onChange={handleLocationChange} > 
+                        <select value={currentLocation} onChange={handleLocationChange}> 
                                 <option value="">Select Location</option>   
                                 <option value="harare">Harare</option>
                                 <option value="bulawayo">Bulawayo</option>
                                 <option value="other">Other place</option>
                         </select>
 
+                        {
+                            currentLocation === "other" ?
+                                <div className="location-select-width">
+                                    <select className={currentLocation !== "other" ? "form-display" : "form-display-select"} value={currentService} onChange={handleServiceChange} > 
+                                            <option value="">Select available options</option>   
+                                            <option value="mail">Mail in</option>
+                                    </select>
+                                </div>
+                                :
+                                null
+                        }
                         
-                        <div className={currentLocation !== "" ? "form-display-select": "form-display"}>
-                            <select className={currentLocation !== "other" ? "form-display" : "form-display-select"} value={currentService} onChange={handleServiceChange} > 
-                                    <option value="">Select available options</option>   
-                                    <option value="mail">Mail in</option>
-                            </select>
-                        </div>
 
-                        <div className={currentLocation !== "" ? "form-display-select": "form-display"}>
-                            <select className={currentLocation !== "harare" ? "form-display" : "form-display-select"} value={currentService} onChange={handleServiceChange} > 
-                                    <option value="">Select Service </option>   
-                                    <option value="curbside">Curbside</option>
-                                    <option value="walkin">Walkin</option>
-                                    <option value="mail">Mail in</option>
-                            </select>
-                        </div>
+                        {
+                            currentLocation === "harare" ? 
+                            <div className="location-select-width">
+                                <select className={currentLocation !== "harare" ? "form-display" : "form-display-select"} value={currentService} onChange={handleServiceChange} > 
+                                        <option value="">Select Service </option>   
+                                        <option value="curbside">Curbside</option>
+                                        <option value="walkin">Walkin</option>
+                                        <option value="mail">Mail in</option>
+                                </select>
+                            </div>
+                            :
+                            null
+                        }
 
-                        <div className={currentLocation !== "" ? "form-display-select": "form-display"}>
-                            <select className={currentLocation !== "bulawayo" ? "form-display" : "form-display-select"} value={currentService} onChange={handleServiceChange} > 
-                                    <option value="">Select Service </option>   
-                                    <option value="curbside">Curbside</option>
-                                    <option value="walkin">Walkin</option>
-                                    <option value="mail">Mail in</option>
-                            </select>
-                        </div>
+                        {
+                            currentLocation === "bulawayo" ?
+                            <div className="location-select-width">
+                                <select className={currentLocation !== "bulawayo" ? "form-display" : "form-display-select"} value={currentService} onChange={handleServiceChange} > 
+                                        <option value="">Select Service </option>   
+                                        <option value="curbside">Curbside</option>
+                                        <option value="walkin">Walkin</option>
+                                        <option value="mail">Mail in</option>
+                                </select>
+                            </div>
+                            :
+                            null
+                        }
                        
 
                         <div className="device-location">
