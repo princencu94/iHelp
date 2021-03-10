@@ -41,6 +41,9 @@
     margin-bottom: 0.5rem;
     width:300px;
     font-family: 'Poppins', sans-serif;
+    -moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
 }
 .device-type {
     border-right: 1px solid white;
@@ -73,6 +76,9 @@ caption {
     margin-bottom: 0.5rem;
     width:300px;
     font-family: 'Poppins', sans-serif;
+    -moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
 }
 
 
@@ -123,6 +129,9 @@ caption {
     margin-bottom: 0.5rem;
     width:300px;
     font-family: 'Poppins', sans-serif;
+    -moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
 }
 
 .repairs-next-buttons {

@@ -1,8 +1,9 @@
 import React from 'react';
 import './hero-section.styles.css';
 import heroImage from '../../assets/fixing-phone.jpg';
+import { Link } from 'react-router-dom';
 
-const HeroSection = () => {
+const HeroSection = ({ history }) => {
     return (
         <div className="hero-container"> 
             <img src={heroImage} alt="Hero section" />
@@ -11,8 +12,8 @@ const HeroSection = () => {
                 <p>We are here to make sure that you get your device repaired as soon as possible, give us a shout.</p>
 
                 <div className="hero-buttons">
-                    <button className="products-button">Products</button>
-                    <button className="repairs-button">Repair Device</button>
+                    <Link className="products-button" to="/products">Products</Link>
+                    <Link className="repairs-button" to="/services">Repairs</Link>
                 </div>
             </div>
         </div>
