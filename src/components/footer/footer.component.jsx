@@ -25,9 +25,9 @@ const Footer = () => {
                 </div>
 
                 <div className="customer-section">
-                    <Link>Contact Us</Link>
+                    <Link to="/contact-us">Contact Us</Link>
                     <Link>Shipping</Link>
-                    <Link>FAQ</Link>
+                    <Link to="/faq">FAQ</Link>
                 </div>
             </div>
             <div className="footer-bottom">

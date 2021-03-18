@@ -11,6 +11,12 @@
     color:#777E9B;
 }
 
+.spinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 @media only screen and (max-width: 600px) {
     .single-product-back {
         margin-left: 1rem;

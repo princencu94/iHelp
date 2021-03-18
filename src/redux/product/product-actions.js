@@ -20,7 +20,7 @@ export const productsFetchStartAsnyc = () => {
 
         dispatch(startFetchingProducts());
         
-        firestore.collection("products")
+        firestore.collection("products").orderBy("manufactured", "desc")
         .get()
         .then((snapshot) => {
             const data = snapshot.docs.map((doc) => ({
@@ -40,3 +40,9 @@ export const productsFetchStartAsnyc = () => {
     }
    
 }
+
+
+export const getSingleProduct = (product) => ({
+    type:productActionTypes.FETCH_SINGLE_PRODUCT,
+    payload:product
+})

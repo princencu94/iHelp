@@ -13,7 +13,7 @@ const Product = ({ product }) => {
                     </div>
                     <div className="product-body">
                         <p>{newProduct ? `New` : null}</p>
-                        <h4><span>{title}</span> <span>{memory === 0 ? null : memory}</span></h4>
+                        <h4><span>{title}</span> <span className="memory-op">{memory === 0 ? null : memory}</span></h4>
                     </div>
                 </div>
             </Link>

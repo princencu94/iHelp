@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './single-products.styles.css';
 import { connect } from 'react-redux';
+import { firestore } from '../../firebase/firebase-utils';
 import {
     useParams,
     Link
@@ -12,12 +13,24 @@ import ProductOverview from '../../components/product-overview/product-overview.
 import Navbar from '../../components/navbar/navbar.component';
 import RelatedItems from '../../components/related-items/related-items.component';
 
-const SingleProduct = ({products, isFetchingProducts}) => {
-   
+import { getSingleProduct } from '../../redux/product/product-actions';
 
+const SingleProduct = () => {
     let { id } = useParams();
-    const singleProduct = products.find(product => product.sn === id);
-    const related = singleProduct.related;
+    const [singleProduct, setSingleProduct] = useState({})
+
+    useEffect(() => {
+        firestore.collection("products").where("sn", "==", id)
+        .onSnapshot((querySnapshot) => {
+            querySnapshot.forEach((doc) => {
+                setSingleProduct(doc.data());
+            });
+
+        });
+    }, [id])
+   
+    
+    console.log(singleProduct)
     return (
         <div className="single-product-container">
             <Navbar/>
@@ -26,21 +39,35 @@ const SingleProduct = ({products, isFetchingProducts}) => {
             </div>
             {
 
-                isFetchingProducts ? 
+                singleProduct !== undefined ? 
                 <ProductOverview item={singleProduct}/>
                 :
-                <CircularProgress/> 
+                <div className="spinner">
+                     <CircularProgress/> 
+                </div>
             }
-            <RelatedItems related={related} />
+            {
+                singleProduct.related !== undefined ? 
+                <RelatedItems related={singleProduct.related} id={id}/>
+                :
+                <div className="spinner">
+                     <CircularProgress/> 
+                </div>
+               
+                
+            }
+            
         </div>
     )
 }
 
 const mapStateToProps = state => ({
-    products: state.product.products,
-    isFetchingProducts: state.product.isFetchingProducts
+    singleProduct: state.product.singleProduct
+})
+
+const mapDispatchToProps = dispatch => ({
+    getSingleProduct: (product) => dispatch(getSingleProduct(product))
 })
 
 
-
-export default connect(mapStateToProps)(SingleProduct);
+export default connect(mapStateToProps, mapDispatchToProps)(SingleProduct);

@@ -19,3 +19,25 @@
 .mobile-links a:hover {
    color: #f6f6f6;
 }
+
+.products-mobile {
+   width:100%;
+   text-align: center;
+}
+
+.mobile-dropdown-links {
+   display: flex;
+   flex-direction: column;
+}
+
+.mobile-dropdown-links a:hover {
+   color:#F2F2F2;
+}
+
+.mobile-dropdown-links a {
+   font-size: 18px;
+}
+
+.link-display-none {
+   display: none;
+}

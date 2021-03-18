@@ -1,0 +1,35 @@
+.faq-page-content {
+    width:70%;
+    margin:0 auto;
+    z-index: 10;
+}
+
+.faq-page-content h4 {
+    margin-top: 20px;
+}
+
+.faq-page-banner {
+    background-color: #f2f2f2;
+    height: 30vh;
+    margin-bottom: 5rem;
+    margin-top: -20px;
+}
+
+.faq-page-banner h1 {
+    padding-top:3rem;
+    margin-left: 5rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .faq-page-content {
+        width:90%;
+        margin:0 auto;
+        z-index: 10;
+    }
+
+    .faq-page-banner h1 {
+        padding-top:3rem;
+        margin-left: 1rem;
+    }
+}

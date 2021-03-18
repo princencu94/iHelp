@@ -1,12 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './mobile-nav.styles.css';
 
 import { withStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import MuiDialogTitle from '@material-ui/core/DialogTitle';
 import MuiDialogContent from '@material-ui/core/DialogContent';
-import MuiDialogActions from '@material-ui/core/DialogActions';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import Typography from '@material-ui/core/Typography';
@@ -47,8 +45,13 @@ const DialogContent = withStyles((theme) => ({
 }))(MuiDialogContent);
 
 
-export default function MobileNavbar({handleClose, open,handleClickOpen}) {
+export default function MobileNavbar({handleClose, open}) {
 
+  const [openDropdown, setDropDown] = useState(false);
+
+  const handleDropDown = () => {
+    setDropDown(!openDropdown);
+  }
 
   return (
     <div > 
@@ -58,7 +61,16 @@ export default function MobileNavbar({handleClose, open,handleClickOpen}) {
         </DialogTitle>
         <DialogContent dividers>
             <div className="mobile-links">
-              <Link to="/products">Products</Link>
+              <div className="products-mobile">
+                <Link to="#" onClick={handleDropDown}>Products</Link>
+                <div className={openDropdown !== false ? "mobile-dropdown-links" : "link-display-none"}>
+                  <Link to="product/accessories">Accesories</Link>
+                  <Link to="product/apple-watch">Apple Watch </Link>
+                  <Link to="product/ipad">Ipad</Link>   
+                  <Link to="product/iphone">Iphone</Link>       
+                  <Link to="product/macbook">MacBook</Link>       
+                </div>
+              </div>
               <Link to="/services">Services</Link>
             </div>
             

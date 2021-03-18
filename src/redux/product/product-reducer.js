@@ -2,6 +2,7 @@ import { productActionTypes } from './product-types';
 
 const INITIAL_STATE = {
     products:[],
+    singleProduct:{},
     productsFetchError:"",
     isFetchingProducts:false
 }
@@ -23,6 +24,11 @@ export const productReducer = (state = INITIAL_STATE , action) => {
                 ...state,
                 productsFetchError:action.payload
             }
+        case productActionTypes.FETCH_SINGLE_PRODUCT:
+            return {
+            ...state,
+            singleProduct:action.payload
+        }
         default:
             return state;
     }

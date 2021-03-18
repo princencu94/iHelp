@@ -13,7 +13,9 @@ export const products = [
                     category:"iphone-7",
                     image:"https://i.ibb.co/Rb51gKw/7-plus.jpg",
                     newProduct:false,
-                    sn:"i12"
+                    sn:"i12",
+                    manufactured:"2016-09-01T00:00:00Z"
+
                 },
                 {
                     title:"iPhone 7 Plus",
@@ -24,7 +26,8 @@ export const products = [
                     category:1,
                     image:"https://i.ibb.co/Rb51gKw/7-plus.jpg",
                     newProduct:false,
-                    sn:"i13"
+                    sn:"i13",
+                    manufactured:"2016-09-01T00:00:00Z"
                 },
                 {
                     title:"iPhone 8",
@@ -35,7 +38,8 @@ export const products = [
                     category:"iphone-8",
                     image:"https://i.ibb.co/5Gky7XQ/iphone-8.jpg",
                     newProduct:false,
-                    sn:"i14"
+                    sn:"i14",
+                    manufactured:"2017-09-22T00:00:00Z"
                 },
                 {
                     title:"iPhone 8 Plus",
@@ -46,7 +50,8 @@ export const products = [
                     category:"iphone-8",
                     image:"https://i.ibb.co/3cSx8Xg/iphone-8-plus.jpg",
                     newProduct:false,
-                    sn:"i15"
+                    sn:"i15",
+                    manufactured:"2017-09-22T00:00:00Z"
                 },
                 {
                     title:"iPhone 8 Plus",
@@ -57,7 +62,8 @@ export const products = [
                     category:"iphone-8",
                     image:"https://i.ibb.co/3cSx8Xg/iphone-8-plus.jpg",
                     newProduct:false,
-                    sn:"i16"
+                    sn:"i16",
+                    manufactured:"2017-09-22T00:00:00Z"
                 },
                 {
                     title:"iPhone X",
@@ -68,7 +74,8 @@ export const products = [
                     category:"iphone-x",
                     image:"https://i.ibb.co/MNWmxd2/iphone-x.jpg",
                     newProduct:false,
-                    sn:"i17"
+                    sn:"i17",
+                    manufactured:"2017-11-03T00:00:00Z"
                 },
                 {
                     title:"iPhone XR",
@@ -79,7 +86,8 @@ export const products = [
                     category:"iphone-x",
                     image:"https://i.ibb.co/n8j52rM/iphone-xr.jpg",
                     newProduct:false,
-                    sn:"i18"
+                    sn:"i18",
+                    manufactured:"2018-10-26T00:00:00Z"
                 },
                 {
                     title:"iPhone XS MAX",
@@ -90,7 +98,8 @@ export const products = [
                     category:"iphone-x",
                     image:"https://i.ibb.co/jG6DFL2/iphone-xmas.jpg",
                     newProduct:false,
-                    sn:"i19"
+                    sn:"i19",
+                    manufactured:"2018-09-21T00:00:00Z"
                 },
                 {
                     title:"iPhone XS MAX",
@@ -101,7 +110,8 @@ export const products = [
                     category:"iphone-x",
                     image:"https://i.ibb.co/jG6DFL2/iphone-xmas.jpg",
                     newProduct:false,
-                    sn:"i20"
+                    sn:"i20",
+                    manufactured:"2018-09-21T00:00:00Z"
                 },
                 {
                     title:"iPhone 11",
@@ -112,7 +122,8 @@ export const products = [
                     category:"iphone-11",
                     image:"https://i.ibb.co/RCmz9bx/iphone-11.jpg",
                     newProduct:false,
-                    sn:"i21"
+                    sn:"i21",
+                    manufactured:"2019-09-20T00:00:00Z"
                 },
                 {
                     title:"iPhone 11 Pro",
@@ -123,7 +134,8 @@ export const products = [
                     category:"iphone-11",
                     image:"https://i.ibb.co/W2ddNbJ/iphone-11-Pro.jpg",
                     newProduct:false,
-                    sn:"i223"
+                    sn:"i223",
+                    manufactured:"2019-09-20T00:00:00Z"
                 },
                 {
                     title:"iPhone 11 Pro Max",
@@ -134,7 +146,8 @@ export const products = [
                     category:"iphone-11",
                     image:"https://i.ibb.co/w4cYT0g/iphone-11-Pro-Max.jpg",
                     newProduct:false,
-                    sn:"i22"
+                    sn:"i22",
+                    manufactured:"2019-09-20T00:00:00Z"
                 },
                 {
                     title:"iPhone 11 Pro Max",
@@ -145,7 +158,8 @@ export const products = [
                     category:"iphone-11",
                     image:"https://i.ibb.co/w4cYT0g/iphone-11-Pro-Max.jpg",
                     newProduct:false,
-                    sn:"i23"
+                    sn:"i23",
+                    manufactured:"2019-09-20T00:00:00Z"
                 },
                 {
                     title:"iPhone 12",
@@ -156,7 +170,8 @@ export const products = [
                     category:"iphone-12",
                     image:"https://i.ibb.co/LC24X54/iphone-12.jpg",
                     newProduct:true,
-                    sn:"i24"
+                    sn:"i24",
+                    manufactured:"2020-10-23T00:00:00Z"
                 },
                 {
                     title:"iPhone 12 Pro",
@@ -167,7 +182,8 @@ export const products = [
                     category:"iphone-12",
                     image:"https://i.ibb.co/H2LMyvB/compare-iphone12-pro-pacific-blue-brjnr8xyuewi-large.jpg",
                     newProduct:true,
-                    sn:"i25"
+                    sn:"i25",
+                    manufactured:"2020-10-23T00:00:00Z"
                 },
                 {
                     title:"iPhone 12 Pro",
@@ -178,7 +194,8 @@ export const products = [
                     category:"iphone-12",
                     image:"https://i.ibb.co/H2LMyvB/compare-iphone12-pro-pacific-blue-brjnr8xyuewi-large.jpg",
                     newProduct:true,
-                    sn:"i26"
+                    sn:"i26",
+                    manufactured:"2020-10-23T00:00:00Z"
                 },
                 {
                     title:"iPhone 12 Pro Max",
@@ -189,7 +206,8 @@ export const products = [
                     category:"iphone-12",
                     image:"https://i.ibb.co/bbPTqQZ/iphone-12-max.jpg",
                     newProduct:true,
-                    sn:"i27"
+                    sn:"i27",
+                    manufactured:"2020-11-13T00:00:00Z"
                 },
                 {
                     title:"iPhone 12 Pro Max",
@@ -200,7 +218,8 @@ export const products = [
                     category:"iphone-12",
                     image:"https://i.ibb.co/bbPTqQZ/iphone-12-max.jpg",
                     newProduct:true,
-                    sn:"i28"
+                    sn:"i28",
+                    manufactured:"2020-11-13T00:00:00Z"
                 },
                 {
                     title:"iPhone 12 Pro Max",
@@ -211,7 +230,8 @@ export const products = [
                     category:"iphone-12",
                     image:"https://i.ibb.co/bbPTqQZ/iphone-12-max.jpg",
                     newProduct:true,
-                    sn:"i29"
+                    sn:"i29",
+                    manufactured:"2020-11-13T00:00:00Z"
                 }
     
             
@@ -231,84 +251,92 @@ export const devices = [
                 price:500,
                 description:[
                     "Display 4.70-inch (750x1334)",
-                    "Processor Apple A10 Fusion",
-                    "Front Camera 7MP",
-                    "Rear Camera 12MP",
-                    "RAM 2GB",
-                    "Storage 32GB",
-                    "Battery Capacity 1960mAh",
-                    "OS iOS 10"
+                    " Processor Apple A10 Fusion",
+                    " Front Camera 7MP",
+                    " Rear Camera 12MP",
+                    " RAM 2GB",
+                    " Storage 32GB",
+                    " Battery Capacity 1960mAh",
+                    " OS iOS 10"
                 ],
-                memory: 32,
+                memory: "32 Gig",
                 available: false,
                 category:"iphone",
                 image:"https://i.ibb.co/jRLJ4qY/iphone-7.jpg",
                 newProduct:false,
                 sn:"i001",
-                related:"iphone-7"
+                related:"iphone-7",
+                manufactured:"2016-09-16T00:00:00Z",
+                colors:"Available upon order"
         },
                     {
                         title:"iPhone 7 Plus",
                         price:600,
                         description:[
-                            "Retina HD display",
-                            "5.5-inch (diagonal) widescreen LCD",
-                            "Multi-Touch display with IPS technology",
-                            "1920-by-1080-pixel resolution at 401 ppi",
-                            "1300:1 contrast ratio (typical)",
-                            "Wide color display (P3)",
-                            "625 cd/m2 max brightness (typical)",
-                            "Dual-domain pixels for wide viewing angles"
+                            " Retina HD display",
+                            " 5.5-inch (diagonal) widescreen LCD",
+                            " Multi-Touch display with IPS technology",
+                            " 1920-by-1080-pixel resolution at 401 ppi",
+                            " 1300:1 contrast ratio (typical)",
+                            " Wide color display (P3)",
+                            " 625 cd/m2 max brightness (typical)",
+                            " Dual-domain pixels for wide viewing angles"
                         ],
-                        memory: 32,
+                        memory: "32 Gig",
                         available: true,
                         category:"iphone",
                         image:"https://i.ibb.co/Rb51gKw/7-plus.jpg",
                         newProduct:false,
                         sn:"i002",
-                        related:"iphone-7"
+                        related:"iphone-7",
+                        manufactured:"2016-09-16T00:00:00Z",
+                        colors:"Available upon order"
                     },
                     {
                         title:"iPhone 7 Plus",
                         price:650,
                         description:[
-                            "Retina HD display",
-                            "5.5-inch (diagonal) widescreen LCD",
-                            "Multi-Touch display with IPS technology",
-                            "1920-by-1080-pixel resolution at 401 ppi",
-                            "1300:1 contrast ratio (typical)",
-                            "Wide color display (P3)",
-                            "625 cd/m2 max brightness (typical)",
-                            "Dual-domain pixels for wide viewing angles"
+                            " Retina HD display",
+                            " 5.5-inch (diagonal) widescreen LCD",
+                            " Multi-Touch display with IPS technology",
+                            " 1920-by-1080-pixel resolution at 401 ppi",
+                            " 1300:1 contrast ratio (typical)",
+                            " Wide color display (P3)",
+                            " 625 cd/m2 max brightness (typical)",
+                            " Dual-domain pixels for wide viewing angles"
                         ],
-                        memory: 256,
+                        memory: "256 Gig",
                         available: true,
                         category:"iphone",
                         image:"https://i.ibb.co/Rb51gKw/7-plus.jpg",
                         newProduct:false,
                         sn:"i003",
-                        related:"iphone-7"
+                        related:"iphone-7",
+                        manufactured:"2016-09-16T00:00:00Z",
+                        colors:"Available upon order"
                     },
-        {
-            title:"iPhone 8",
-            price:600,
-            description:[
-                "4.7 and 5.5-inch LCD display",
-                "Faster A11 processor",
-                "Glass body",
-                "Upgraded camera",
-                "Louder speakers",
-                "Wireless inductive charging"
-            ],
-            memory: 64,
-            available: true,
-            category:"iphone",
-            image:"https://i.ibb.co/5Gky7XQ/iphone-8.jpg",
-            newProduct:false,
-            sn:"i004",
-            related:"iphone-8"
-        },
-                {
+                    {
+                        title:"iPhone 8",
+                        price:600,
+                        description:[
+                            "4.7 and 5.5-inch LCD display",
+                            "Faster A11 processor",
+                            "Glass body",
+                            "Upgraded camera",
+                            "Louder speakers",
+                            "Wireless inductive charging"
+                        ],
+                        memory: "64 Gig",
+                        available: true,
+                        category:"iphone",
+                        image:"https://i.ibb.co/5Gky7XQ/iphone-8.jpg",
+                        newProduct:false,
+                        sn:"i004",
+                        related:"iphone-8",
+                        manufactured:"2017-09-22T00:00:00Z",
+                        colors:"Available upon order"
+                    },
+                    {
                     title:"iPhone 8 Plus",
                     price:800,
                     description:[
@@ -321,13 +349,15 @@ export const devices = [
                         "3D Touch",
                         "625 nits max brightness (typical)"
                     ],
-                    memory: 64,
+                    memory: "64 Gig",
                     available: true,
                     category:"iphone",
                     image:"https://i.ibb.co/3cSx8Xg/iphone-8-plus.jpg",
                     newProduct:false,
                     sn:"i005",
-                    related:"iphone-8"
+                    related:"iphone-8",
+                    manufactured:"2017-09-22T00:00:00Z",
+                    colors:"Available upon order"
                 },
                 {
                     title:"iPhone 8 Plus",
@@ -342,13 +372,15 @@ export const devices = [
                         "3D Touch",
                         "625 nits max brightness (typical)"
                     ],
-                    memory: 256,
+                    memory: "256 Gig",
                     available: true,
                     category:"iphone",
                     image:"https://i.ibb.co/3cSx8Xg/iphone-8-plus.jpg",
                     newProduct:false,
                     sn:"i006",
-                    related:"iphone-8"
+                    related:"iphone-8",
+                    manufactured:"2017-09-22T00:00:00Z",
+                    colors:"Available upon order"
                 },
         {
             title:"iPhone X",
@@ -363,13 +395,15 @@ export const devices = [
                 "Wireless inductive charging",
                 "Animoji"
             ],
-            memory: 64,
+            memory: "64 Gig",
             available: true,
             category:"iphone",
             image:"https://i.ibb.co/MNWmxd2/iphone-x.jpg",
             newProduct:false,
             sn:"i007",
-            related:"iphone-x"
+            related:"iphone-x",
+            manufactured:"2017-11-03T00:00:00Z",
+            colors:"Available upon order"
         },
         
                 {
@@ -385,13 +419,15 @@ export const devices = [
                         "Dual SIM",
                         "Longer Battery Life"
                     ],
-                    memory: 64,
+                    memory: "64 Gig",
                     available: true,
                     category:"iphone",
                     image:"https://i.ibb.co/n8j52rM/iphone-xr.jpg",
                     newProduct:false,
                     sn:"i008",
-                    related:"iphone-x"
+                    related:"iphone-x",
+                    manufactured:"2018-10-26T00:00:00Z",
+                    colors:"Available upon order"
                 },
 
 
@@ -408,13 +444,15 @@ export const devices = [
                         "Wide color display (P3)",
                         "3D Touch"
                     ],
-                    memory: 64,
+                    memory: "64 Gig",
                     available: true,
                     category:"iphone",
                     image:"https://i.ibb.co/jG6DFL2/iphone-xmas.jpg",
                     newProduct:false,
                     sn:"i009",
-                    related:"iphone-x"
+                    related:"iphone-x",
+                    manufactured:"2018-09-21T00:00:00Z",
+                    colors:"Available upon order"
                 },
                 {
                     title:"iPhone XS MAX",
@@ -429,13 +467,15 @@ export const devices = [
                         "Wide color display (P3)",
                         "3D Touch"
                     ],
-                    memory: 256,
+                    memory: "256 Gig",
                     available: true,
                     category:"iphone-x",
                     image:"https://i.ibb.co/jG6DFL2/iphone-xmas.jpg",
                     newProduct:false,
                     sn:"i010",
-                    related:"iphone-x"
+                    related:"iphone-x",
+                    manufactured:"2018-09-21T00:00:00Z",
+                    colors:"Available upon order"
                 },
 
         {
@@ -449,13 +489,15 @@ export const devices = [
                 "Camera: 12 MP (wide) + 12 MP (ultrawide)",
                 "Battery: Non-removable Li-Ion 3110 mAh battery + Fast battery charging 18W: 50% in 30 min",
             ],
-            memory: 128,
+            memory: "128 Gig",
             stock: 3,
             category:"iphone",
             image:"https://i.ibb.co/RCmz9bx/iphone-11.jpg",
             newProduct:false,
             sn:"i011",
-            related:"iphone-11"
+            related:"iphone-11",
+            manufactured:"2019-09-20T00:00:00Z",
+            colors:"Available upon order"
         },
 
                 {
@@ -469,13 +511,15 @@ export const devices = [
                         "Connectivity. Wi-Fi. Yes",
                         "Sensors. Face unlock. Yes"
                     ],
-                    memory: 256,
+                    memory: "256 Gig",
                     available: true,
                     category:"iphone",
                     image:"https://i.ibb.co/W2ddNbJ/iphone-11-Pro.jpg",
                     newProduct:false,
                     sn:"i012",
-                    related:"iphone-11"
+                    related:"iphone-11",
+                    manufactured:"2019-09-20T00:00:00Z",
+                    colors:"Available upon order"
                 },
                 {
                     title:"iPhone 11 Pro Max",
@@ -488,13 +532,15 @@ export const devices = [
                         "Connectivity. Wi-Fi. Yes",
                         "Sensors. Face unlock. Yes"
                     ],
-                    memory: 256,
+                    memory: "256 Gig",
                     available: true,
                     category:"iphone",
                     image:"https://i.ibb.co/w4cYT0g/iphone-11-Pro-Max.jpg",
                     newProduct:false,
                     sn:"i013",
-                    related:"iphone-11"
+                    related:"iphone-11",
+                    manufactured:"2019-09-20T00:00:00Z",
+                    colors:"Available upon order"
                 },
                 {
                     title:"iPhone 11 Pro Max",
@@ -507,32 +553,58 @@ export const devices = [
                         "Connectivity. Wi-Fi. Yes",
                         "Sensors. Face unlock. Yes"
                     ],
-                    memory: 512,
+                    memory: "512 Gig",
                     available: true,
                     category:"iphone",
                     image:"https://i.ibb.co/w4cYT0g/iphone-11-Pro-Max.jpg",
                     newProduct:false,
                     sn:"i014",
-                    related:"iphone-11"
+                    related:"iphone-11",
+                    manufactured:"2019-09-20T00:00:00Z",
+                    colors:"Available upon order"
                 },      
         {
             title:"iPhone 12",
             price:1550,
             description:[
                 "iPhone 12 has 6.10-inch display and 1170x2532 pixels resolution",
-                "Dual camera setup on rear with features like autofocus and more",
-                "Front camera is of 12 MP",
-                "Runs iOS 14",
-                "64GB inbuilt storage",
-                "Dimensions of the phone are 146.70 mm x 71.50 mm x 7.40 mm; weight is 164 grams"
+                " Dual camera setup on rear with features like autofocus and more",
+                " Front camera is of 12 MP",
+                " Runs iOS 14",
+                " 64GB inbuilt storage",
+                " Dimensions of the phone are 146.70 mm x 71.50 mm x 7.40 mm; weight is 164 grams"
             ],
-            memory: 128,
+            memory: "128 Gig",
             available: true,
             category:"iphone",
             image:"https://i.ibb.co/LC24X54/iphone-12.jpg",
             newProduct:true,
             sn:"i015",
-            related:"iphone-12"
+            related:"iphone-12",
+            manufactured:"2020-10-23T00:00:00Z",
+            colors:"Available upon order"
+        },
+        {
+            title:"iPhone 12 Mini",
+            price:1550,
+            description:[
+                "5.4″Super Retina XDR display",
+                "Superfast downloads, high‑quality streaming",
+                "Dolby Vision HDR video recording up to 30 fps",
+                "2x Optical zoom range",
+                "Fastest chip in a smartphone",
+                "Up to 15 hours video playback",
+                "Water resistant to a depth of 6 meters for up to 30 minutes"
+            ],
+            memory: "128 Gig",
+            available: true,
+            category:"iphone",
+            image:"https://i.ibb.co/JtPbQXB/compare-iphone12-mini-black-32g32p2j7hem-large.jpg",
+            newProduct:true,
+            sn:"i021",
+            related:"iphone-12",
+            manufactured:"2020-10-23T00:00:00Z",
+            colors:"Available upon order"
         },
         
                 {
@@ -545,13 +617,15 @@ export const devices = [
                         "64GB inbuilt storage.",
                         "Dimensions of the phone are 146.70 mm x 71.50 mm x 7.40 mm; weight is 164 grams."
                     ],
-                    memory: 256,
+                    memory: "256 Gig",
                     available: true,
                     category:"iphone",
                     image:"https://i.ibb.co/H2LMyvB/compare-iphone12-pro-pacific-blue-brjnr8xyuewi-large.jpg",
                     newProduct:true,
                     sn:"i016",
-                    related:"iphone-12"
+                    related:"iphone-12",
+                    manufactured:"2020-10-23T00:00:00Z",
+                    colors:"Available upon order"
                 },
                 {
                     title:"iPhone 12 Pro",
@@ -563,13 +637,15 @@ export const devices = [
                         "Telephoto: ƒ/2.0 aperture (iPhone 12 Pro); ƒ/2.2 aperture (iPhone 12 Pro Max)",
                         "2x optical zoom in, 2x optical zoom out; 4x optical zoom range (iPhone 12 Pro)"
                     ],
-                    memory: 512,
+                    memory: "512 Gig",
                     available: true,
                     category:"iphone",
                     image:"https://i.ibb.co/H2LMyvB/compare-iphone12-pro-pacific-blue-brjnr8xyuewi-large.jpg",
                     newProduct:true,
                     sn:"i017",
-                    related:"iphone-12"
+                    related:"iphone-12",
+                    manufactured:"2020-10-23T00:00:00Z",
+                    colors:"Available upon order"
                 },
                 {
                     title:"iPhone 12 Pro Max",
@@ -581,13 +657,15 @@ export const devices = [
                         "Telephoto: ƒ/2.0 aperture (iPhone 12 Pro); ƒ/2.2 aperture (iPhone 12 Pro Max)",
                         "2x optical zoom in, 2x optical zoom out; 4x optical zoom range (iPhone 12 Pro)"
                     ],
-                    memory: 128,
+                    memory: "128 Gig",
                     available: true,
                     category:"iphone",
                     image:"https://i.ibb.co/bbPTqQZ/iphone-12-max.jpg",
                     newProduct:true,
                     sn:"i018",
-                    related:"iphone-12"
+                    related:"iphone-12",
+                    manufactured:"2020-11-13T00:00:00Z",
+                    colors:"Available upon order"
                 },
                 {
                     title:"iPhone 12 Pro Max",
@@ -599,13 +677,15 @@ export const devices = [
                         "Telephoto: ƒ/2.0 aperture (iPhone 12 Pro); ƒ/2.2 aperture (iPhone 12 Pro Max)",
                         "2x optical zoom in, 2x optical zoom out; 4x optical zoom range (iPhone 12 Pro)"
                     ],
-                    memory: 256,
+                    memory: "256 Gig",
                     available: true,
                     category:"iphone",
                     image:"https://i.ibb.co/bbPTqQZ/iphone-12-max.jpg",
                     newProduct:true,
                     sn:"i019",
-                    related:"iphone-12"
+                    related:"iphone-12",
+                    manufactured:"2020-11-13T00:00:00Z",
+                    colors:"Available upon order"
                 },
                 {
                     title:"iPhone 12 Pro Max",
@@ -617,13 +697,15 @@ export const devices = [
                         "Telephoto: ƒ/2.0 aperture (iPhone 12 Pro); ƒ/2.2 aperture (iPhone 12 Pro Max)",
                         "2x optical zoom in, 2x optical zoom out; 4x optical zoom range (iPhone 12 Pro)"
                     ],
-                    memory: 512,
+                    memory: "512 Gig",
                     available: true,
                     category:"iphone",
                     image:"https://i.ibb.co/bbPTqQZ/iphone-12-max.jpg",
                     newProduct:true,
                     sn:"i020",
-                    related:"iphone-12"
+                    related:"iphone-12",
+                    manufactured:"2020-11-13T00:00:00Z",
+                    colors:"Available upon order"
                 },
                 {
                     title:"Apple Watch Series 5",
@@ -644,7 +726,9 @@ export const devices = [
                     image:"https://i.ibb.co/1bgWSFj/watch-series-5.jpg",
                     newProduct:false,
                     sn:"iw001",
-                    related:"watch-5"
+                    related:"watch-5",
+                    manufactured:"2019-09-26T00:00:00Z",
+                    colors:"Available upon order"
                 },
                 {
                     title:"Apple Watch Series 6",
@@ -663,7 +747,9 @@ export const devices = [
                     image:"https://i.ibb.co/X2BcctH/watch-series-6.jpg",
                     newProduct:false,
                     sn:"iw002",
-                    related:"watch-6"
+                    related:"watch-6",
+                    manufactured:"2020-09-18T00:00:00Z",
+                    colors:"Available upon order"
                 },
                 {
                     title:"Apple Watch Series 6",
@@ -682,7 +768,9 @@ export const devices = [
                     image:"https://i.ibb.co/X2BcctH/watch-series-6.jpg",
                     newProduct:false,
                     sn:"iw002",
-                    related:"watch-6"
+                    related:"watch-6",
+                    manufactured:"2020-09-18T00:00:00Z",
+                    colors:"Available upon order"
                 },
                 {
                     title:"iPad 7th Gen",
@@ -696,13 +784,15 @@ export const devices = [
                     "Closed Captions",
                     "AssistiveTouch",
                     "Speak Screen"],
-                    memory: 128,
+                    memory: "128 Gig",
                     available: true,
                     category:"ipad",
                     image:"https://i.ibb.co/g3Pnx9v/ipad-7thgen.jpg",
                     newProduct:false,
                     sn:"ip001",
-                    related:"ipad"
+                    related:"ipad",
+                    manufactured:"2019-09-25T00:00:00Z",
+                    colors:"Available upon order"
                 },
                 {
                     title:"iPad 8th Gen",
@@ -716,13 +806,15 @@ export const devices = [
                     "Closed Captions",
                     "AssistiveTouch",
                     "Speak Screen"],
-                    memory: 128,
+                    memory: "128 Gig",
                     available: true,
                     category:"ipad",
                     image:"https://i.ibb.co/g3Pnx9v/ipad-7thgen.jpg",
                     newProduct:false,
                     sn:"ip002",
-                    related:"ipad"
+                    related:"ipad",
+                    manufactured:"2020-09-18T00:00:00Z",
+                    colors:"Available upon order"
                 },
                 {
                     title:"iPad Air 2020",
@@ -736,13 +828,15 @@ export const devices = [
                     "Closed Captions",
                     "AssistiveTouch",
                     "Speak Screen"],
-                    memory: 128,
+                    memory: "128 Gig",
                     available: true,
                     category:"ipad",
                     image:"https://i.ibb.co/029qhVN/ipad-air-1st-gen-silver.jpg",
                     newProduct:false,
                     sn:"ip003",
-                    related:"ipad-air"
+                    related:"ipad-air",
+                    manufactured:"2020-10-23T00:00:00Z",
+                    colors:"Available upon order"
                 },
                 {
                     title:"iPad Pro 2020",
@@ -756,13 +850,15 @@ export const devices = [
                     "Closed Captions",
                     "AssistiveTouch",
                     "Speak Screen"],
-                    memory: 128,
+                    memory: "128 Gig",
                     available: true,
                     category:"ipad",
                     image:"https://i.ibb.co/9bxfxmt/ipad-pro-11.jpg",
                     newProduct:false,
                     sn:"ip004",
-                    related:"ipad-pro"
+                    related:"ipad-pro",
+                    manufactured:"2020-03-25T00:00:00Z",
+                    colors:"Available upon order"
                 },
                 {
                     title:"iPad Pro 2020",
@@ -776,13 +872,15 @@ export const devices = [
                     "Closed Captions",
                     "AssistiveTouch",
                     "Speak Screen"],
-                    memory: 128,
+                    memory: "128 Gig",
                     available: true,
                     category:"ipad",
                     image:"https://i.ibb.co/9bxfxmt/ipad-pro-11.jpg",
                     newProduct:false,
                     sn:"ip005",
-                    related:"ipad-pro"
+                    related:"ipad-pro",
+                    manufactured:"2020-03-25T00:00:00Z",
+                    colors:"Available upon order"
                 },
 
                 {
@@ -804,7 +902,9 @@ export const devices = [
                     image:"https://i.ibb.co/wK3fffV/MRXJ2.png",
                     newProduct:false,
                     sn:"ia001",
-                    related:"airpod-pro"
+                    related:"airpod-pro",
+                    manufactured:"2016-12-13T00:00:00Z",
+                    colors:""
                 },
                 {
                     title:"Airpod 2nd Gen",
@@ -825,7 +925,9 @@ export const devices = [
                     image:"https://i.ibb.co/wK3fffV/MRXJ2.png",
                     newProduct:false,
                     sn:"ia002",
-                    related:"airpod-pro"
+                    related:"airpod-pro",
+                    manufactured:"2019-03-20T00:00:00Z",
+                    colors:""
                 },
                 {
                     title:"Airpod Pro",
@@ -845,7 +947,9 @@ export const devices = [
                     image:"https://i.ibb.co/XFw90tX/airpods-pro-qwgxmyvspfey-large.jpg",
                     newProduct:false,
                     sn:"ia003",
-                    related:"airpod-pro"
+                    related:"airpod-pro",
+                    manufactured:"2019-10-30T00:00:00Z",
+                    colors:""
                 },
                 {
                     title:"EarPods Lightning",
@@ -857,7 +961,9 @@ export const devices = [
                     image:"https://i.ibb.co/jL9F0xB/MMTN2.jpg",
                     newProduct:false,
                     sn:"ias002",
-                    related:"earpods"
+                    related:"earpods",
+                    manufactured:"2016-09-16T00:00:00Z",
+                    colors:""
                 },
                 {
                     title:"EarPods Jack",
@@ -866,22 +972,26 @@ export const devices = [
                     memory: 0,
                     available: true,
                     category:"accessories",
-                    image:"https://i.ibb.co/jL9F0xB/MMTN2.jpg",
+                    image:"https://i.ibb.co/BN4rL6b/MD827.jpg",
                     newProduct:false,
                     sn:"ias003",
-                    related:"earpods"
+                    related:"earpods",
+                    manufactured:"2012-09-12T00:00:00Z",
+                    colors:""
                 },
                 {
                     title:"Lightning",
                     price:30,
                     description:["This USB 2.0 cable connects your iPhone, iPad, or iPod with Lightning connector to your computer’s USB port for syncing and charging. Or you can connect to the Apple USB Power Adapter for convenient charging from a wall outlet."],
-                    memory: 0,
+                    memory: "up to 2m",
                     available: true,
                     category:"accessories",
                     image:"https://i.ibb.co/v1t5gm4/MD818.jpg",
                     newProduct:false,
                     sn:"ias004",
-                    related:"cable"
+                    related:"cable",
+                    manufactured:"2012-09-12T00:00:00Z",
+                    colors:""
                 },
                 {
                     title:"9D(6-8 Plus)",
@@ -897,7 +1007,9 @@ export const devices = [
                     image:"https://i.ibb.co/HY386fr/129907-5085-ipxr19-sty-clr-2.jpg",
                     newProduct:false,
                     sn:"ias005",
-                    related:"tempered"
+                    related:"tempered",
+                    manufactured:"2015-09-12T00:00:00Z",
+                    colors:""
                 },
                 {
                     title:"9D(X- 11 Pro Max)",
@@ -913,7 +1025,9 @@ export const devices = [
                     image:"https://i.ibb.co/HY386fr/129907-5085-ipxr19-sty-clr-2.jpg",
                     newProduct:false,
                     sn:"ias006",
-                    related:"tempered"
+                    related:"tempered",
+                    manufactured:"2015-09-12T00:00:00Z",
+                    colors:""
                 },
                 {
                     title:"9D(iphone 12- 12 Pro Max)",
@@ -929,7 +1043,9 @@ export const devices = [
                     image:"https://i.ibb.co/HY386fr/129907-5085-ipxr19-sty-clr-2.jpg",
                     newProduct:false,
                     sn:"ias007",
-                    related:"tempered"
+                    related:"tempered",
+                    manufactured:"2015-09-12T00:00:00Z",
+                    colors:""
                 },
                 {
                     title:"Privacy",
@@ -945,7 +1061,9 @@ export const devices = [
                     image:"https://i.ibb.co/HY386fr/129907-5085-ipxr19-sty-clr-2.jpg",
                     newProduct:false,
                     sn:"ias008",
-                    related:"tempered"
+                    related:"tempered",
+                    manufactured:"2015-09-12T00:00:00Z",
+                    colors:""
                 },
                 {
                     title:"Silicon Case",
@@ -958,7 +1076,9 @@ export const devices = [
                     image:"https://i.ibb.co/n05hF6L/silicone-case.png",
                     newProduct:false,
                     sn:"ias009",
-                    related:"silicon"
+                    related:"silicon",
+                    manufactured:"2015-09-12T00:00:00Z",
+                    colors:"Available upon order"
                 },
                 {
                     title:"Silicon Case",
@@ -971,7 +1091,9 @@ export const devices = [
                     image:"https://i.ibb.co/n05hF6L/silicone-case.png",
                     newProduct:false,
                     sn:"ias010",
-                    related:"silicon"
+                    related:"silicon",
+                    manufactured:"2015-09-12T00:00:00Z",
+                    colors:"Available upon order"
                 },
                 {
                     title:"Clear Case",
@@ -984,7 +1106,9 @@ export const devices = [
                     image:"https://i.ibb.co/HVp4xbw/s-l1600.jpg",
                     newProduct:false,
                     sn:"ias011",
-                    related:"clear"
+                    related:"clear",
+                    manufactured:"2015-09-12T00:00:00Z",
+                    colors:""
                 },
 
                 {
@@ -998,9 +1122,55 @@ export const devices = [
                     image:"https://i.ibb.co/HVp4xbw/s-l1600.jpg",
                     newProduct:false,
                     sn:"ias012",
-                    related:"clear"
+                    related:"clear",
+                    manufactured:"2015-09-12T00:00:00Z",
+                    colors:""
                 },
-
+                {
+                    title:"MacBook Air M1",
+                    price:0,
+                    description:["13.3” Retina display",
+                    "8-coreApple M1 chip", "Up to16GB unified memory", "Up to 2TBstorage", "Up to 18 hrsbattery life", "Touch ID"],
+                    memory: "13 in",
+                    available: true,
+                    category:"macbook",
+                    image:"https://i.ibb.co/znYDjSL/compare-macbook-air-retina-gold-ewleoaqvx7qu-large.jpg",
+                    newProduct:true,
+                    sn:"mac001",
+                    related:"mac-air",
+                    manufactured:"2020-09-12T00:00:00Z",
+                    colors:"Available upon order"
+                },
+                {
+                    title:"MacBook Pro",
+                    price:0,
+                    description:["13.3” Retina display",
+                    "8-coreApple M1 chip", "Up to16GB unified memory", "Up to 2TBstorage", "Up to 20 hrsbattery life", "Touch Bar and Touch ID"],
+                    memory: "13 in",
+                    available: true,
+                    category:"macbook",
+                    image:"https://i.ibb.co/99WhFWK/compare-macbook-pro-13-spacegray-jy60myikwne6-large.jpg",
+                    newProduct:true,
+                    sn:"mac002",
+                    related:"mac-pro",
+                    manufactured:"2020-09-12T00:00:00Z",
+                    colors:"Available upon order"
+                },
+                {
+                    title:"MacBook Pro",
+                    price:0,
+                    description:["16” Retina display",
+                    "Up to 8-core Intel Core i9 processor", "Up to 64GB memory", "Up to 8TB storage", "Up to 11 hrs battery life", "Touch Bar and Touch ID"],
+                    memory: "16 in",
+                    available: true,
+                    category:"macbook",
+                    image:"https://i.ibb.co/xYbN5yJ/compare-macbook-pro-16-spacegray-dx8anpw8a9qq-large.jpg",
+                    newProduct:true,
+                    sn:"mac003",
+                    related:"mac-pro",
+                    manufactured:"2020-09-12T00:00:00Z",
+                    colors:"Available upon order"
+                },
 ]
 
 
@@ -1008,60 +1178,86 @@ export const featured = [
     {
         title:"iPhone 12",
         price:1550,
-        description:["iPhone 12 has 6.10-inch display and 1170x2532 pixels resolution.",
-        "Dual camera setup on rear with features like autofocus and more.",
-        "Front camera is of 12 MP.",
-        "Runs iOS 14.",
-        "64GB inbuilt storage.",
-        "Dimensions of the phone are 146.70 mm x 71.50 mm x 7.40 mm; weight is 164 grams."],
-        memory: 128,
+        description:[
+            "iPhone 12 has 6.10-inch display and 1170x2532 pixels resolution",
+            " Dual camera setup on rear with features like autofocus and more",
+            " Front camera is of 12 MP",
+            " Runs iOS 14",
+            " 64GB inbuilt storage",
+            " Dimensions of the phone are 146.70 mm x 71.50 mm x 7.40 mm; weight is 164 grams"
+        ],
+        memory: "128 Gig",
         available: true,
         category:"iphone",
         image:"https://i.ibb.co/LC24X54/iphone-12.jpg",
         newProduct:true,
         sn:"i015",
-        related:"iphone-12"
+        related:"iphone-12",
+        manufactured:"2020-10-23T00:00:00Z",
+        colors:"Available upon order"
+    },
+    {
+        title:"iPhone 12 Mini",
+        price:1550,
+        description:[
+            "5.4″Super Retina XDR display",
+            "Superfast downloads, high‑quality streaming",
+            "Dolby Vision HDR video recording up to 30 fps",
+            "2x Optical zoom range",
+            "Fastest chip in a smartphone",
+            "Up to 15 hours video playback",
+            "Water resistant to a depth of 6 meters for up to 30 minutes"
+        ],
+        memory: "128 Gig",
+        available: true,
+        category:"iphone",
+        image:"https://i.ibb.co/JtPbQXB/compare-iphone12-mini-black-32g32p2j7hem-large.jpg",
+        newProduct:true,
+        sn:"i021",
+        related:"iphone-12",
+        manufactured:"2020-10-23T00:00:00Z",
+        colors:"Available upon order"
     },
     
     {
-        title:"iPhone 11",
-        price:1200,
+        title:"iPhone 12 Pro",
+        price:2000,
         description:[
-            "Processor: Apple A13 Bionic (7 nm+)",
-            "RAM: 4 GB",
-            "Storage: 64 GB, 128 GB, 256 GB",
-            "Display: 6.1 inches",
-            "Camera: 12 MP (wide) + 12 MP (ultrawide)",
-            "Battery: Non-removable Li-Ion 3110 mAh battery + Fast battery charging 18W: 50% in 30 min",
+            "Pro 12MP camera system: Ultra Wide, Wide, and Telephoto cameras",
+            "Ultra Wide: ƒ/2.4 aperture and 120° field of view",
+            "Wide: ƒ/1.6 aperture",
+            "Telephoto: ƒ/2.0 aperture (iPhone 12 Pro); ƒ/2.2 aperture (iPhone 12 Pro Max)",
+            "2x optical zoom in, 2x optical zoom out; 4x optical zoom range (iPhone 12 Pro)"
         ],
-        memory: 128,
+        memory: "512 Gig",
         available: true,
         category:"iphone",
-        image:"https://i.ibb.co/RCmz9bx/iphone-11.jpg",
-        newProduct:false,
-        sn:"i011",
-        related:"iphone-11"
+        image:"https://i.ibb.co/H2LMyvB/compare-iphone12-pro-pacific-blue-brjnr8xyuewi-large.jpg",
+        newProduct:true,
+        sn:"i017",
+        related:"iphone-12",
+        manufactured:"2020-10-23T00:00:00Z",
+        colors:"Available upon order"
     },
     {
-        title:"Apple Watch Series 5",
-        price:650,
-        description:["GPS/GNSS",
-        "Compass",
-        "Barometric altimeter",
-        "Water resistant",
-        "50 meters",
-        "Electrical heart sensor",
-        "Second-generation optical heart sensor",
-        "International emergency calling",
-        "Emergency SOS",
-        "Accelerometer"],
-        memory: "44mm",
+        title:"iPhone 12 Pro Max",
+        price:2000,
+        description:[
+            "Pro 12MP camera system: Ultra Wide, Wide, and Telephoto cameras",
+            "Ultra Wide: ƒ/2.4 aperture and 120° field of view",
+            "Wide: ƒ/1.6 aperture",
+            "Telephoto: ƒ/2.0 aperture (iPhone 12 Pro); ƒ/2.2 aperture (iPhone 12 Pro Max)",
+            "2x optical zoom in, 2x optical zoom out; 4x optical zoom range (iPhone 12 Pro)"
+        ],
+        memory: "128 Gig",
         available: true,
-        category:"apple-watch",
-        image:"https://i.ibb.co/1bgWSFj/watch-series-5.jpg",
-        newProduct:false,
-        sn:"iw001",
-        related:"watch-5"
+        category:"iphone",
+        image:"https://i.ibb.co/bbPTqQZ/iphone-12-max.jpg",
+        newProduct:true,
+        sn:"i018",
+        related:"iphone-12",
+        manufactured:"2020-11-13T00:00:00Z",
+        colors:"Available upon order"
     },
     {
         title:"Apple Watch Series 6",
@@ -1080,11 +1276,13 @@ export const featured = [
         image:"https://i.ibb.co/X2BcctH/watch-series-6.jpg",
         newProduct:false,
         sn:"iw002",
-        related:"watch-6"
+        related:"watch-6",
+        manufactured:"2020-09-18T00:00:00Z",
+        colors:"Available upon order"
     },
     {
-        title:"iPad 7th Gen",
-        price:700,
+        title:"iPad 8th Gen",
+        price:800,
         description:["Voice Control",
         "VoiceOver",
         "Zoom",
@@ -1094,13 +1292,15 @@ export const featured = [
         "Closed Captions",
         "AssistiveTouch",
         "Speak Screen"],
-        memory: 128,
+        memory: "128 Gig",
         available: true,
         category:"ipad",
         image:"https://i.ibb.co/g3Pnx9v/ipad-7thgen.jpg",
         newProduct:false,
-        sn:"ip001",
-        related:"ipad"
+        sn:"ip002",
+        related:"ipad",
+        manufactured:"2020-09-18T00:00:00Z",
+        colors:"Available upon order"
     },
     {
         title:"iPad Air 2020",
@@ -1114,15 +1314,16 @@ export const featured = [
         "Closed Captions",
         "AssistiveTouch",
         "Speak Screen"],
-        memory: 128,
+        memory: "128 Gig",
         available: true,
         category:"ipad",
         image:"https://i.ibb.co/029qhVN/ipad-air-1st-gen-silver.jpg",
         newProduct:false,
         sn:"ip003",
-        related:"ipad-air"
+        related:"ipad-air",
+        manufactured:"2020-10-23T00:00:00Z",
+        colors:"Available upon order"
     },
-
     {
         title:"iPad Pro 2020",
         price:1700,
@@ -1135,15 +1336,46 @@ export const featured = [
         "Closed Captions",
         "AssistiveTouch",
         "Speak Screen"],
-        memory: 128,
+        memory: "128 Gig",
         available: true,
         category:"ipad",
         image:"https://i.ibb.co/9bxfxmt/ipad-pro-11.jpg",
         newProduct:false,
         sn:"ip004",
-        related:"ipad-pro"
+        related:"ipad-pro",
+        manufactured:"2020-03-25T00:00:00Z",
+        colors:"Available upon order"
     },
-
+    {
+        title:"MacBook Air M1",
+        price:0,
+        description:["13.3” Retina display",
+        "8-coreApple M1 chip", "Up to16GB unified memory", "Up to 2TBstorage", "Up to 18 hrsbattery life", "Touch ID"],
+        memory: "13 in",
+        available: true,
+        category:"macbook",
+        image:"https://i.ibb.co/znYDjSL/compare-macbook-air-retina-gold-ewleoaqvx7qu-large.jpg",
+        newProduct:true,
+        sn:"mac001",
+        related:"mac-air",
+        manufactured:"2020-09-12T00:00:00Z",
+        colors:"Available upon order"
+    },
+    {
+        title:"MacBook Pro",
+        price:0,
+        description:["13.3” Retina display",
+        "8-coreApple M1 chip", "Up to16GB unified memory", "Up to 2TBstorage", "Up to 20 hrsbattery life", "Touch Bar and Touch ID"],
+        memory: "13 in",
+        available: true,
+        category:"macbook",
+        image:"https://i.ibb.co/99WhFWK/compare-macbook-pro-13-spacegray-jy60myikwne6-large.jpg",
+        newProduct:true,
+        sn:"mac002",
+        related:"mac-pro",
+        manufactured:"2020-09-12T00:00:00Z",
+        colors:"Available upon order"
+    },
     {
         title:"Airpod Pro",
         price:380,
@@ -1162,74 +1394,95 @@ export const featured = [
         image:"https://i.ibb.co/XFw90tX/airpods-pro-qwgxmyvspfey-large.jpg",
         newProduct:false,
         sn:"ia003",
-        related:"airpod-pro"
+        related:"airpod-pro",
+        colors:"Available upon order"
     },
     {
-        title:"EarPods Lightning",
-        price:45,
-        description:["The speakers inside the EarPods have been engineered to maximize sound output and minimize sound loss, which means you get high-quality audio. "],
+        title:"Airpod Pro",
+        price:380,
+        description:["Active Noise Cancellation",
+        "Adaptive EQ",
+        "Dual beamforming microphones",
+        "Force sensor",
+        "Sweat and water resistant (IPX4)",
+        "Vent system for pressure equalization",
+        "Spatial audio with dynamic head tracking",
+        "Dual optical sensors",
+        "Speech-detecting accelerometer"],
         memory: 0,
         available: true,
         category:"accessories",
-        image:"https://i.ibb.co/jL9F0xB/MMTN2.jpg",
+        image:"https://i.ibb.co/XFw90tX/airpods-pro-qwgxmyvspfey-large.jpg",
         newProduct:false,
-        sn:"ias002",
-        related:"earpods"
+        sn:"ia003",
+        related:"airpod-pro",
+        manufactured:"2019-10-30T00:00:00Z",
+        colors:"Available upon order"
     },
     {
-        title:"Lightning",
-        price:30,
-        description:["This USB 2.0 cable connects your iPhone, iPad, or iPod with Lightning connector to your computer’s USB port for syncing and charging. Or you can connect to the Apple USB Power Adapter for convenient charging from a wall outlet."],
-        memory: 0,
-        available: true,
-        category:"accessories",
-        image:"https://i.ibb.co/v1t5gm4/MD818.jpg",
-        newProduct:false,
-        sn:"ias004",
-        related:"cable"
-    },
-    {
-        title:"Privacy",
-        price:40,
-        description:["100% Brand New and high quality!",
-        "Ultra Slim Thickness",
-        "Bubble Free",
-        "9H Strong Hardness Anti-Scratch, Real tempered glass protector."
+        title:"iPhone 11",
+        price:1200,
+        description:[        
+            "Processor: Apple A13 Bionic (7 nm+)",
+            "RAM: 4 GB",
+            "Storage: 64 GB, 128 GB, 256 GB",
+            "Display: 6.1 inches",
+            "Camera: 12 MP (wide) + 12 MP (ultrawide)",
+            "Battery: Non-removable Li-Ion 3110 mAh battery + Fast battery charging 18W: 50% in 30 min",
         ],
-        memory: 0,
-        available: true,
-        category:"accessories",
-        image:"https://i.ibb.co/HY386fr/129907-5085-ipxr19-sty-clr-2.jpg",
+        memory: "128 Gig",
+        stock: 3,
+        category:"iphone",
+        image:"https://i.ibb.co/RCmz9bx/iphone-11.jpg",
         newProduct:false,
-        sn:"ias008",
-        related:"tempered"
+        sn:"i011",
+        related:"iphone-11",
+        manufactured:"2019-09-20T00:00:00Z",
+        colors:"Available upon order"
     },
-    {
-        title:"Silicon Case",
-        price:20,
-        description:["100% Brand New and high quality!",
-        "Extreme Protection", "iphone 6 - 8 Plus"],
-        memory: 0,
-        available: true,
-        category:"accessories",
-        image:"https://i.ibb.co/n05hF6L/silicone-case.png",
-        newProduct:false,
-        sn:"ias009",
-        related:"silicon"
-    },
-    {
-        title:"Clear Case",
-        price:15,
-        description:["100% Brand New and high quality!",
-        "Beautiful Design", "iphone 6 - 8 Plus"],
-        memory: 0,
-        available: true,
-        category:"accessories",
-        image:"https://i.ibb.co/HVp4xbw/s-l1600.jpg",
-        newProduct:false,
-        sn:"ias011",
-        related:"clear"
-    },
+
+            {
+                title:"iPhone 11 Pro",
+                price:1400,
+                description:[         
+                    "Display. Screen size (inches) 5.80. Touchscreen",
+                    "Hardware. Processor. hexa-core. Processor make",
+                    "Camera. Rear camera. 12-megapixel (f/1.8) + 12-megapixel (f/2.4) + 12-megapixel (f/2.0)",
+                    "Software. Operating system. iOS 13",
+                    "Connectivity. Wi-Fi. Yes",
+                    "Sensors. Face unlock. Yes"
+                ],
+                memory: "256 Gig",
+                available: true,
+                category:"iphone",
+                image:"https://i.ibb.co/W2ddNbJ/iphone-11-Pro.jpg",
+                newProduct:false,
+                sn:"i012",
+                related:"iphone-11",
+                manufactured:"2019-09-20T00:00:00Z",
+                colors:"Available upon order"
+            },
+            {
+                title:"iPhone 11 Pro Max",
+                price:1750,
+                description:[
+                    "Display. Screen size (inches) 6.50. Touchscreen.",
+                    "Hardware. Processor. hexa-core. Processor make",
+                    "Camera. Rear camera. 12-megapixel (f/1.8) + 12-megapixel (f/2.4) + 12-megapixel (f/2.0)",
+                    "Software. Operating system. iOS 13",
+                    "Connectivity. Wi-Fi. Yes",
+                    "Sensors. Face unlock. Yes"
+                ],
+                memory: "256 Gig",
+                available: true,
+                category:"iphone",
+                image:"https://i.ibb.co/w4cYT0g/iphone-11-Pro-Max.jpg",
+                newProduct:false,
+                sn:"i013",
+                related:"iphone-11",
+                manufactured:"2019-09-20T00:00:00Z",
+                colors:"Available upon order"
+            },
 ]
 
 

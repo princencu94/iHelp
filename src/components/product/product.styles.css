@@ -38,6 +38,10 @@
     text-decoration: none;
 }
 
+.memory-op {
+    opacity: 0.6;
+}
+
 @media only screen and (max-width: 600px) {
     .product-container {
         width:40%;

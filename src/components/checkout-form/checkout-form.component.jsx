@@ -44,7 +44,7 @@ const CheckoutForm = ({ cartItems, cartTotal }) => {
             </form>
 
             <p>
-                *Please not payments are only in cash for now so leave your details and we will get back to you immediately
+                *Please note payments are only in cash for now so leave your details and we will get back to you immediately
             </p>
         </div>
     )

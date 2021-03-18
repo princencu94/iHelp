@@ -15,17 +15,21 @@ import Product from '../../components/product/product.component';
 import Sponsor from '../../components/sponsors/sponsors.component'
 import Navbar from '../../components/navbar/navbar.component';
 
+import { addCollectionAndDocuments } from "../../firebase/firebase-utils";
+import { featured, devices } from '../../shop-data/data';
 
 const Homepage = ({productsFetchStartAsnyc}) => {
 
     const [allProducts, setAllProducts] = useState();
     const [isLoading, setLoading] = useState();
 
+    
 
     useEffect(() => {
+        //addCollectionAndDocuments('products', devices);
         productsFetchStartAsnyc();
 
-       const Devices= firestore.collection("featured");
+       const Devices= firestore.collection("featured").orderBy("manufactured", "desc");
 
         Devices
         .get()
@@ -73,11 +77,11 @@ const Homepage = ({productsFetchStartAsnyc}) => {
                 <div className="about-us">
                     <div className="about-info">
                         <h1>About us</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        <p>
+                            Founded in 2014 with an aim to sell authentic apple products and improve customer’s experience, iHelp is a tech-centred support firm whose special focus over the years has revolved around supplying all Apple products and other related technological devices and services. 
                         </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        <p>
+                            The tech-centred company now has 4 branches in Harare namely Harare, Bulawayo, Mutare and Victoria Falls. iHelp Co-Founder and CEO is Munyaradzi Edson, and he has a wealth of experience in business development and marketing whilst Kudzai Gore is the Director and Head of Technical Support.
                         </p>
                     </div>
 

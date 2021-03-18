@@ -4,7 +4,7 @@ import { firestore } from '../../firebase/firebase-utils';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Product from '../product/product.component';
 
-const RelatedItems = ({ related }) => {
+const RelatedItems = ({ related, id }) => {
     const [allRelated, setAllRelated] = useState();
     const [isLoading, setLoading] = useState(true);
     console.log(related);
@@ -34,7 +34,7 @@ const RelatedItems = ({ related }) => {
         <div className="related-items-container">
             {
                 isLoading !== true ?
-                allRelated.map(related => 
+                allRelated.filter((filtered => filtered.sn !== id)).map(related => 
                    <Product key={related.sn} product={related}/>
                 )
                 :

@@ -37,13 +37,20 @@ const Navbar = ({ toggleCart, toggleHiddenCart, totalItems}) => {
                     <Link to="/products">PRODUCTS</Link>
                     <div className="products-dropdown">
                         <div className="products-display-flex">
-                            <Link to="/iphone">
-                                <img src={phone} alt="Phone" />
-                                <h4>Iphone</h4>
+                            <Link to="/accessories">
+                                Accesories
                             </Link>
-                            <Link to="/samsung">
-                                <img src={phone} alt="Phone" />
-                                <h4>Samsung</h4>
+                            <Link to="/apple-watch">
+                                Apple Watch
+                            </Link>
+                            <Link to="/ipad">
+                                Ipad
+                            </Link>
+                            <Link to="/iphone">
+                                Iphone
+                            </Link>
+                            <Link to="/macbook">
+                                MacBook
                             </Link>
                         </div>
                     </div>
@@ -57,7 +64,7 @@ const Navbar = ({ toggleCart, toggleHiddenCart, totalItems}) => {
                 </Badge>
                     
                     {
-                        toggleCart == true ?
+                        toggleCart === true ?
                         <Checkout/>
                         : null
                     }
@@ -72,7 +79,7 @@ const Navbar = ({ toggleCart, toggleHiddenCart, totalItems}) => {
                             </Badge>
                                 
                                 {
-                                    toggleCart == true ?
+                                    toggleCart === true ?
                                     <Checkout/>
                                     : null
                                 }

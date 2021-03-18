@@ -41,7 +41,7 @@
 .products-dropdown {
     display: none;
     position: absolute;
-    top:3.5rem;
+    top:3.9rem;
     right:0rem;
     background-color: #000;
     width: 560px;
@@ -57,7 +57,7 @@
 }
 
 /* Change color of dropdown links on hover */
-.products-dropdown a:hover {background-color: red;}
+.products-dropdown a:hover {background-color: #F2F2F2; color: black;}
 
 /* Show the dropdown menu on hover */
 .products-link:hover .products-dropdown {display: block;}
@@ -68,7 +68,7 @@
 
 .products-display-flex {
     display: flex;
-    flex-direction:row;
+    flex-direction:column;
     justify-content: space-evenly;
 }
 
