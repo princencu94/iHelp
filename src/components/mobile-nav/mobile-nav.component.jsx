@@ -64,14 +64,16 @@ export default function MobileNavbar({handleClose, open}) {
               <div className="products-mobile">
                 <Link to="#" onClick={handleDropDown}>Products</Link>
                 <div className={openDropdown !== false ? "mobile-dropdown-links" : "link-display-none"}>
-                  <Link to="product/accessories">Accesories</Link>
-                  <Link to="product/apple-watch">Apple Watch </Link>
-                  <Link to="product/ipad">Ipad</Link>   
-                  <Link to="product/iphone">Iphone</Link>       
-                  <Link to="product/macbook">MacBook</Link>       
+                  <Link to="/accessories">Accesories</Link>
+                  <Link to="/apple-watch">Apple Watch </Link>
+                  <Link to="/ipad">Ipad</Link>   
+                  <Link to="/iphone">Iphone</Link>       
+                  <Link to="/macbook">MacBook</Link>       
                 </div>
               </div>
               <Link to="/services">Services</Link>
+              <Link to="/about-us">About Us</Link>
+              <Link to="/contact-us">Contact Us</Link>
             </div>
             
         </DialogContent>

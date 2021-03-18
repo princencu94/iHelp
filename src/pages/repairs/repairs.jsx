@@ -141,8 +141,10 @@ const RepairsPage = ({ history,addRepair }) => {
                         <select value={currentIssue} onChange={handleIssueChange} > 
                                 <option value="">Select Issue</option>   
                                 <option value="Broken Screen">Broken Screen</option>
-                                <option value="Cover">Cover</option>
-                                <option value="Battery">Battery</option>
+                                <option value="Cover">Back Housing/Cover</option>
+                                <option value="Battery">Short Battery Life</option>
+                                <option value="Charging">Won't Charge</option>
+                                <option value="Water Damage">Water Damage</option>
                                 <option value="Other Issue">Other Issue</option>
                         </select>
 
@@ -187,6 +189,43 @@ const RepairsPage = ({ history,addRepair }) => {
                                 </div>
                                 : null
                             }   
+
+                            {
+                                currentIssue === "Battery" ?
+                                <div className="repair-img-card">
+                                    <div className="repair-img">
+                                        <img src="https://i.ibb.co/jZ5NpKJ/battery.png" alt="Battery Problem" />
+                                    </div>
+                                    <div className="repair-caption">
+                                        <h4>Short Battery Life</h4>
+                                    </div>
+                                </div>
+                                : null
+                            }  
+                             {
+                                currentIssue === "Charging" ?
+                                <div className="repair-img-card">
+                                    <div className="repair-img">
+                                        <img src="https://i.ibb.co/QFW3mPx/charger.png" alt="Charging Problem" />
+                                    </div>
+                                    <div className="repair-caption">
+                                        <h4>Won't Charge</h4>
+                                    </div>
+                                </div>
+                                : null
+                            }    
+                            {
+                                currentIssue === "Water Damage" ?
+                                <div className="repair-img-card">
+                                    <div className="repair-img">
+                                        <img src="https://i.ibb.co/JvmG5wN/1594996307.png" alt="Water Damage" />
+                                    </div>
+                                    <div className="repair-caption">
+                                        <h4>Water Damage</h4>
+                                    </div>
+                                </div>
+                                : null
+                            }    
                         </div>
                         <p><AnchorLink href='#location' onClick={handleNext}>Next</AnchorLink></p>
                     </div> 

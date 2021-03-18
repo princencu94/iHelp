@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { addItem } from '../../redux/cart/cart-actions';
 
 const ProductOverview = ({ item, addItem }) => {
-    const { title, image, description, price, memory } = item;
+    const { title, image, description, price, memory, colors } = item;
 
     
 
@@ -22,7 +22,8 @@ const ProductOverview = ({ item, addItem }) => {
                     <div>
                         <p>{description}</p>
                     </div>
-                    <p className="detail-line"><span>{memory === 0 ? null : memory}</span> <span>in Stock</span></p>
+                    <p className="detail-line"><span>{memory === 0 ? null : memory}</span></p>
+                    <p>{`Colours ${colors}`}</p>
                     <h3>${price}</h3>
 
                     <div className="product-overview-buttons"> 

@@ -58,6 +58,12 @@ const Navbar = ({ toggleCart, toggleHiddenCart, totalItems}) => {
                 <div className="services-link">
                     <Link to="/services">SERVICES</Link>
                 </div>
+                <div>
+                    <Link to="/about-us">ABOUT US</Link>
+                </div>
+                <div>
+                    <Link to="/contact-us">CONTACT US</Link>
+                </div>
                 <div className="cart-link">
                 <Badge badgeContent={totalItems} color="secondary">
                     <img src={cartIcon} alt="Cart Icon" onClick={toggleHiddenCart}/>

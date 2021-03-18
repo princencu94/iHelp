@@ -26,7 +26,7 @@ const Homepage = ({productsFetchStartAsnyc}) => {
     
 
     useEffect(() => {
-        //addCollectionAndDocuments('products', devices);
+        //addCollectionAndDocuments('featured', featured);
         productsFetchStartAsnyc();
 
        const Devices= firestore.collection("featured").orderBy("manufactured", "desc");
