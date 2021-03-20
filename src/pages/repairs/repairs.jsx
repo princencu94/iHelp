@@ -9,6 +9,12 @@ import { Link } from 'react-router-dom';
 import carryIn from '../../assets/carry-in.png';
 import cubside from '../../assets/car.png';
 import mail from '../../assets/mail.png';
+import computer from '../../assets/computer.svg';
+import other from '../../assets/other.svg';
+import tablet from '../../assets/tablet.svg';
+import virus from '../../assets/virus.svg';
+import hardDrive from '../../assets/hard-drive.svg';
+import brokenScreen from '../../assets/broken-screen.svg';
 
 import { addRepair } from '../../redux/repairs/repair-actions';
 import { connect } from 'react-redux';
@@ -90,17 +96,59 @@ const RepairsPage = ({ history,addRepair }) => {
                         <h1>Tell us what device you have.</h1>
                         <p>In order to determine which repair solution is best for you, tell us about your device.</p>
                     </div>
-                    <div className="device-select-card">
+                    <div className="device-select">
+                        <select value={currentCollection} onChange={handleChange}  >  
+                            <option value="">Select Device Type</option>  
+                            <option value="iphone">iPhone</option>
+                            <option value="ipad">iPad</option>
+                            <option value="macbook">Macbook</option>
+                            <option value="iwatches">iWatch</option>
+                        </select>
+                    </div>
+                    <div className={currentCollection !== "" ? "device-select-card" : "form-display"}>
                         <div className="device-type">
-                            <img src={device} alt="device"/>
+                            {
+                                 currentCollection === "iphone" ?
+                                 <div className="device-type-img">
+                                     <img src={device} alt="device"/>
+                                     <h4>iPhone</h4>
+                                 </div>   
+                                : null
+                            }
+
+                            {
+                                 currentCollection === "ipad" ?
+                                 <div className="device-type-img">
+                                    <img src={tablet} alt="Ipad"/>
+                                    <h4>iPad</h4>
+                                </div>
+                                : null
+                            }
+
+                            {
+                                currentCollection === "macbook" ?
+                                <div className="device-type-img">
+                                    <img src={computer} alt="MacBook"/>
+                                    <h4>MacBook</h4>
+                                </div>
+                                : null
+                            }
+
+                            {
+                                 currentCollection === "iwatches" ?
+                                <div className="device-type-img">
+                                    <img src={other} alt="iWatch"/>
+                                    <h4>iWatch</h4>
+                                </div>
+                                : null
+                            }
+                           
                         </div>
 
                         <form>
-                            <select value={currentCollection} onChange={handleChange}  >  
-                                <option value="">Select Device Type</option>  
-                                <option value="iphone">Iphone</option>
-                            </select>
-
+                            
+                            {
+                                currentCollection === "iphone" ?
                             <select disabled={currentCollection !== "" ? false : true} value={currentPhone} onChange={handlePhoneChange} >    
                             <option value="">Select Device</option>
                                 <option value="iPhone 12 Pro Max">iPhone 12 Pro Max</option>
@@ -126,10 +174,81 @@ const RepairsPage = ({ history,addRepair }) => {
                                 <option value="iPhone 5s">iPhone 5s</option>
                                 <option value="iPhone 5c">iPhone 5c</option>
                                 <option value="iPhone 5">iPhone 5</option>
-                            </select>    
+                            </select>
+                                : null    
+                            }
+
+
+                            {
+                                currentCollection === "ipad" ?
+                                    <select disabled={currentCollection !== "" ? false : true} value={currentPhone} onChange={handlePhoneChange} >    
+                                    <option value="">Select Device</option>
+                                        <option value="iPad Pro 12.9 (3rd Gen)">iPad Pro 12.9 (3rd Gen)</option>
+                                        <option value="iPad Pro 12.9 (2nd Gen)">iPad Pro 12.9 (2nd Gen)</option>
+                                        <option value="iPad Pro 12.9 (1st Gen)">iPad Pro 12.9 (1st Gen)</option>
+                                        <option value="iPad Pro 11 (3rd Gen)">iPad Pro 11 (3rd Gen)</option>
+                                        <option value="iPad Pro 10.5">iPad Pro 10.5</option>
+                                        <option value="iPad Pro 9.7">iPad Pro 9.7</option>
+                                        <option value="iPad 10.2 (7th Gen)">iPad 10.2 (7th Gen)</option>
+                                        <option value="iPad 9.7 (6th Gen)">iPad 9.7 (6th Gen)</option>
+                                        <option value="iPad (5th Generation)">iPad (5th Generation)</option>
+                                        <option value="iPad Air 3">iPad Air 3</option>
+                                        <option value="iPad Air 2">iPad Air 2</option>
+                                        <option value="iPad Air">iPad Air</option>
+                                        <option value="iPad Mini 6">iPad Mini 6</option>
+                                        <option value="iPad Mini 5">iPad Mini 5</option>
+                                        <option value="iPad Mini 4">iPad Mini 4</option>
+                                        <option value="iPad Mini 3">iPad Mini 3</option>
+                                        <option value="iPad Mini 2">iPad Mini 2</option>
+                                        <option value="iPad Mini (1st Generation)">iPad Mini (1st Generation)</option>
+                                        <option value="iPad (4th Generation)">iPad (4th Generation)</option>
+                                        <option value="iPad (3rd Generation)">iPad (3rd Generation)</option>
+                                        <option value="iPad 2">iPad 2</option>
+                                        <option value="iPad (1st Generation)">iPad (1st Generation)</option>
+                                        <option value="Other Device">Other Device</option>
+                                    </select>
+                                : null    
+                            }
+
+                                {
+                                    currentCollection === "macbook" ?
+                                    <select disabled={currentCollection !== "" ? false : true} value={currentPhone} onChange={handlePhoneChange} >    
+                                    <option value="">Select Device</option>
+                                        <option value="MacBook Pro Retina(Late 2012 - 2015)">MackBook Pro Retina(Late 2012 - 2015)</option>
+                                        <option value="MacBook Pro Alluminum(2006 - 2008)">MackBook Pro Alluminum(2006 - 2008)</option>
+                                        <option value="MacBook Pro Unibody(2009 - Mid 2012)">MackBook Pro Unibody(2009 - Mid 2012)</option>
+                                        <option value="MacBook Air Unibody(Late 2010 - current)">MacBook Air Unibody(Late 2010 - current)</option>
+                                        <option value="MacBook Air (2008-2010)">MacBook Air (2008-2010)</option>
+                                        <option value="Other issues">Other issues</option>
+                                    </select>
+                                : null    
+                                }
+
+                                {
+                                    currentCollection === "iwatches" ?
+                                    <select disabled={currentCollection !== "" ? false : true} value={currentPhone} onChange={handlePhoneChange} >    
+                                    <option value="">Select Device</option>
+                                        <option value="Apple Watch (1st generation)">Apple Watch (1st generation)</option>
+                                        <option value="Apple Watch Series 1">Apple Watch Series 1</option>
+                                        <option value="Apple Watch Series 2">Apple Watch Series 2</option>
+                                        <option value="Apple Watch Series 3">Apple Watch Series 3</option>
+                                        <option value="Apple Watch Series 4">Apple Watch Series 4</option>
+                                        <option value="Apple Watch Series 5">Apple Watch Series 5</option>
+                                        <option value="Apple Watch SE">Apple Watch SE</option>
+                                        <option value="Apple Watch Series 6">Apple Watch Series 6</option>
+                                    </select>
+                                : null    
+                                }
                         </form>
-                    </div> 
-                    <p><AnchorLink href='#issues' onClick={handleNext}>Next</AnchorLink></p>
+                        <p><AnchorLink href='#issues' onClick={handleNext}>Next</AnchorLink></p>
+                    </div>
+                    {
+                        currentCollection !== "" ?
+                        <p><AnchorLink href='#issues' onClick={handleNext}>Next</AnchorLink></p>
+                        :
+                        null
+                    }
+                    
                 </div>
 
                 <div className="repairs-select-issue next-button" id='issues'>
@@ -138,7 +257,9 @@ const RepairsPage = ({ history,addRepair }) => {
                         <p>What seems to be the problem? If you don't know that's ok too.</p>
                     </div>
                     <div className={currentPhone !== "" ? "issue-select-card" : "form-display"}>
-                        <select value={currentIssue} onChange={handleIssueChange} > 
+                        {
+                            currentCollection === "iphone" ?
+                            <select value={currentIssue} onChange={handleIssueChange} > 
                                 <option value="">Select Issue</option>   
                                 <option value="Broken Screen">Broken Screen</option>
                                 <option value="Cover">Back Housing/Cover</option>
@@ -146,7 +267,52 @@ const RepairsPage = ({ history,addRepair }) => {
                                 <option value="Charging">Won't Charge</option>
                                 <option value="Water Damage">Water Damage</option>
                                 <option value="Other Issue">Other Issue</option>
-                        </select>
+                            </select>
+                            :
+                            null
+                        }
+
+                        {
+                            currentCollection === "ipad" ?
+                            <select value={currentIssue} onChange={handleIssueChange} > 
+                                <option value="">Select Issue</option>   
+                                <option value="Broken Screen">Broken Screen</option>
+                                <option value="Water Damage">Water Damage</option>
+                                <option value="Other Issue">Other Issue</option>
+                            </select>
+                            :
+                            null
+                        }
+
+                        {
+                            currentCollection === "macbook" ?
+                            <select value={currentIssue} onChange={handleIssueChange} > 
+                                <option value="">Select Issue</option>
+                                <option value="Battery">Short Battery Life</option>   
+                                <option value="Water Damage">Water Damage</option>
+                                <option value="Broken Computer Screen">Broken Screen</option>
+                                <option value="Virus or Spyware">Virus or Spyware</option>
+                                <option value="Won't Boot/Hard Drive">Won't Boot/Hard Drive</option>
+                                <option value="Other Issue">Other Issue</option>
+                            </select>
+                            :
+                            null
+                        }
+
+                        {
+                            currentCollection === "iwatches" ?
+                            <select value={currentIssue} onChange={handleIssueChange} > 
+                                <option value="">Select Issue</option>   
+                                <option value="Broken Screen">Broken Screen</option>
+                                <option value="Cover">Back Housing/Cover</option>
+                                <option value="Battery">Short Battery Life</option>
+                                <option value="Charging">Won't Charge</option>
+                                <option value="Water Damage">Water Damage</option>
+                                <option value="Other Issue">Other Issue</option>
+                            </select>
+                            :
+                            null
+                        }
 
                         <div className="device-issue">
 
@@ -225,7 +391,43 @@ const RepairsPage = ({ history,addRepair }) => {
                                     </div>
                                 </div>
                                 : null
-                            }    
+                            } 
+                            {
+                                currentIssue === "Broken Computer Screen" ?
+                                <div className="repair-img-card">
+                                    <div className="repair-img">
+                                        <img src={brokenScreen} alt="Broken Screen" />
+                                    </div>
+                                    <div className="repair-caption">
+                                        <h4>Broken Computer Screen</h4>
+                                    </div>
+                                </div>
+                                : null
+                            }     
+                            {
+                                currentIssue === "Virus or Spyware" ?
+                                <div className="repair-img-card">
+                                    <div className="repair-img">
+                                        <img src={virus} alt="Virus or Spyware" />
+                                    </div>
+                                    <div className="repair-caption">
+                                        <h4>Virus or Spyware</h4>
+                                    </div>
+                                </div>
+                                : null
+                            } 
+                            {
+                                currentIssue === "Won't Boot/Hard Drive" ?
+                                <div className="repair-img-card">
+                                    <div className="repair-img">
+                                        <img src={hardDrive} alt="Won't Boot/Hard Drive" />
+                                    </div>
+                                    <div className="repair-caption">
+                                        <h4>Won't Boot/Hard Drive</h4>
+                                    </div>
+                                </div>
+                                : null
+                            }      
                         </div>
                         <p><AnchorLink href='#location' onClick={handleNext}>Next</AnchorLink></p>
                     </div> 

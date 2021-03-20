@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="208px" height="208px" viewBox="0 0 208 208" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>other</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="217.221456%" y1="-20.5828631%" x2="0%" y2="122.231574%" id="linearGradient-1">
+            <stop stop-color="#E0E0E0" offset="0%"></stop>
+            <stop stop-color="#F0F0F0" stop-opacity="0.493744339" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="other" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy-4" fill-rule="nonzero" x="0" y="0" width="208" height="208"></rect>
+        <g id="Other_icon" transform="translate(53.000000, 51.000000)">
+            <circle id="Oval-6" stroke="#5E5E5E" stroke-width="3" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" cx="52" cy="52" r="52"></circle>
+            <path d="M52.5449683,96.4637681 C77.6330808,96.4637681 97.9710145,76.2192525 97.9710145,51.2463768 C97.9710145,26.2735012 77.6330808,6.02898551 52.5449683,6.02898551 C39.2753588,6.02898551 59.8824403,30.2457829 57.2753623,42.8286749 C55.0218046,53.7053248 49.9948231,62.8976773 40.5128964,69.5389816 C31.0309697,76.180286 11.1979557,72.6658698 17.9559223,80.5594467 C26.2880103,90.2916609 38.6923768,96.4637681 52.5449683,96.4637681 Z" id="Oval-6" fill-opacity="0.9" fill="url(#linearGradient-1)"></path>
+            <path d="M26.9294686,53.0778056 C26.9294686,43.65377 31.9478153,35.090586 40.0261132,30.7297774 L35.9391042,22.6086957 C24.9273028,28.5529218 18.0869565,40.2279927 18.0869565,53.0778056 C18.0869565,72.0142514 32.9622725,87.4202899 51.2463768,87.4202899 C69.5304812,87.4202899 84.4057971,72.0142514 84.4057971,53.0778056 C84.4057971,40.2279927 77.5654508,28.5529218 66.5536495,22.6086957 L62.4666404,30.7297774 C70.5449384,35.090586 75.563285,43.65377 75.563285,53.0778056 C75.563285,66.9645325 64.65472,78.2622941 51.2463768,78.2622941 C37.8380336,78.2622941 26.9294686,66.9645325 26.9294686,53.0778056 Z" id="XMLID_517_" stroke="#5E5E5E" stroke-width="1.5" fill="#FFFFFF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path>
+            <rect id="Rectangle-29-Copy" stroke="#5E5E5E" stroke-width="1.5" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" x="46.7246377" y="13.5652174" width="9.04347826" height="31.6521739"></rect>
+        </g>
+    </g>
+</svg>
