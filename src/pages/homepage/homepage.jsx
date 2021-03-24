@@ -56,9 +56,11 @@ const Homepage = ({productsFetchStartAsnyc}) => {
                 </div>
 
                 <div className="tab-menu">
-                    <Link to="">iPhone</Link>
-                    <Link to="">iWatch</Link>
-                    <Link to="">Accessories</Link>
+                    <Link>iPhone</Link>
+                    <Link>iPad</Link>
+                    <Link>iWatch</Link>
+                    <Link>Macbook</Link>
+                    <Link>Accessories</Link>
                 </div>
 
                 <div className="products-content">

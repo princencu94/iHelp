@@ -23,9 +23,20 @@
 }
 
 .nav a {
-    padding-left: 40px;
+    padding-left: 0px;
     text-decoration: none;
     color: white;
+}
+
+.services-link {
+    margin-left: 1.7rem;
+}
+.nav a:hover {
+    border-bottom: 1px solid white;
+}
+
+.selected {
+    color:black;
 }
 
 .products-link {

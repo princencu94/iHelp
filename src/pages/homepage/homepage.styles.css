@@ -104,6 +104,10 @@
         text-align: center;
     }
     
+    .about-info p {
+        text-align: center;
+    }
+    
     .about-image {
         margin-top: 1rem;
         width:auto;

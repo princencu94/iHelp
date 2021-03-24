@@ -466,7 +466,7 @@ const RepairsPage = ({ history,addRepair }) => {
                                 <select className={currentLocation !== "harare" ? "form-display" : "form-display-select"} value={currentService} onChange={handleServiceChange} > 
                                         <option value="">Select Service </option>   
                                         <option value="curbside">Curbside</option>
-                                        <option value="walkin">Walkin</option>
+                                        <option value="walkin">Walk in</option>
                                         <option value="mail">Mail in</option>
                                 </select>
                             </div>
@@ -480,7 +480,7 @@ const RepairsPage = ({ history,addRepair }) => {
                                 <select className={currentLocation !== "bulawayo" ? "form-display" : "form-display-select"} value={currentService} onChange={handleServiceChange} > 
                                         <option value="">Select Service </option>   
                                         <option value="curbside">Curbside</option>
-                                        <option value="walkin">Walkin</option>
+                                        <option value="walkin">Walk in</option>
                                         <option value="mail">Mail in</option>
                                 </select>
                             </div>

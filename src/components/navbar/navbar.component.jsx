@@ -2,7 +2,7 @@ import React from 'react';
 import './navbar.styles.css';
 import { connect } from 'react-redux';
 
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import phone from '../../assets/phone.svg';
 import cartIcon from '../../assets/shopping-cart.svg';
 import Checkout from '../checkout/checkout.component';
@@ -56,10 +56,7 @@ const Navbar = ({ toggleCart, toggleHiddenCart, totalItems}) => {
                     </div>
                 </div>
                 <div className="services-link">
-                    <Link to="/services">SERVICES</Link>
-                </div>
-                <div>
-                    <Link to="/about-us">ABOUT US</Link>
+                    <NavLink activeClassName="selected" to="/services" >REPAIRS</NavLink>
                 </div>
                 <div>
                     <Link to="/contact-us">CONTACT US</Link>
