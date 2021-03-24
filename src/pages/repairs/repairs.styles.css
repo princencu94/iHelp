@@ -302,6 +302,23 @@ caption {
 }
 
 @media only screen and (max-width: 600px) {
+    .repairs-select-device {
+        background-color: #f2f2f2;
+        height:100vh;  
+    }
+
+    .repairs-select-issue {
+        background-color: red;
+        height:100vh;
+        margin-top: -1.5rem;
+    }
+
+    .repairs-select-location {
+        background-color: #575759;
+        height:100vh;
+        margin-top: -1.5rem;
+    }
+
     .device-select-card {
         width:90%;
         margin:0 auto;

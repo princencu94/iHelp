@@ -12,7 +12,8 @@ const ProductOverview = ({ item, addItem }) => {
 
     return (
         <div className="product-overview-container">
-            <div className="product-overview">
+            {   item !== undefined ?
+                <div className="product-overview">
                 <div className="product-overview-image">
                     <img src={image} alt=""/>
                 </div>
@@ -30,7 +31,11 @@ const ProductOverview = ({ item, addItem }) => {
                         <button onClick={() => addItem(item)}>Add to Cart</button>
                     </div>
                 </div>
+                
             </div>
+            :
+            null
+            }
 
         </div>
     )
