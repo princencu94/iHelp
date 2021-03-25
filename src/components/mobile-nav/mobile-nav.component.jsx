@@ -71,8 +71,7 @@ export default function MobileNavbar({handleClose, open}) {
                   <Link to="/macbook">MacBook</Link>       
                 </div>
               </div>
-              <Link to="/services">Services</Link>
-              <Link to="/about-us">About Us</Link>
+              <Link to="/services">Repairs</Link>
               <Link to="/contact-us">Contact Us</Link>
             </div>
             
