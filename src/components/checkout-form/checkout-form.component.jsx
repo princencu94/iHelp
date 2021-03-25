@@ -2,8 +2,35 @@ import React, {useState} from 'react';
 import './checkout-form.styles.css';
 import emailjs from 'emailjs-com';
 import { connect } from 'react-redux';
+import { useFormik } from 'formik';
+import { useSnackbar } from 'notistack';
+
+const validate = values => {
+
+    const errors = {};
+ 
+    if (!values.name) {
+ 
+      errors.name = 'Required';
+ 
+    }
+ 
+    if (!values.phone) {
+      errors.phone = 'Required';
+    }
+    
+    if (!values.address) {
+        errors.address = 'Required';
+    }
+
+
+    return errors;
+ 
+};
+ 
 
 const CheckoutForm = ({ cartItems, cartTotal }) => {
+
     var results = cartItems.map(cartItem => 
         ({
             title: cartItem.title,
@@ -12,35 +39,56 @@ const CheckoutForm = ({ cartItems, cartTotal }) => {
         })
     )
     
-    const [order, setOrder] = useState({name:"", phone:"", address:"", orders:JSON.stringify(results), total:cartTotal})
-    
-    console.log(cartItems.length);
-    
+    const { enqueueSnackbar } = useSnackbar();
 
-    const handleChange = (event) => {
-        const { name, value } = event.target;
-        setOrder({...order, [name]:value})
-        event.preventDefault();
-    }
-    
-    const handleSubmit = (event) => {
-        
-        emailjs.send('service_r73mmhm','invoice_form', order, 'user_IKYzdHEQlppNIWtfQVf6E')
+    const formik = useFormik({
+
+        initialValues: {
+   
+          name: '',
+          phone:'',
+          address:'',
+        },
+        validate,
+        onSubmit: values => {
+            const submissionInfo = {
+                name: values.name,
+                phone: values.phone,
+                address: values.address,
+                orders:JSON.stringify(results),
+                total:cartTotal
+            }
+                emailjs.send('service_r73mmhm','invoice_form', submissionInfo, 'user_IKYzdHEQlppNIWtfQVf6E')
                 .then((response) => {
-                console.log('SUCCESS!', response.status, response.text);
+                    enqueueSnackbar("Appointment Submitted", { 
+                        variant: 'success'});
+                    console.log('SUCCESS!', response.status, response.text);
                 }, (err) => {
                 console.log('FAILED...', err);
-                });
-                event.preventDefault();
-    }
+            });
+        },
+   
+      });
+
+   
+
 
     return ( 
         <div className="checkout-form-container">
-            <form onSubmit={handleSubmit}>
-                <input type="text" name="name" placeholder="name"  onChange={handleChange} />
-                <input type="text" name="phone" placeholder="phone" onChange={handleChange} />
-                <input type="text" name="address" placeholder="address" onChange={handleChange}/>
-                <button type="submit" disabled={cartItems.length !== 0 ? false: true}>Proceed</button>
+            <form onSubmit={formik.handleSubmit}>
+                <div>
+                    {formik.errors.name ? <div className="error-message">{formik.errors.name}</div> : null}
+                    <input type="text" name="name" placeholder="Name"  id="name" onChange={formik.handleChange} value={formik.values.name} />
+                </div>
+                <div>
+                    {formik.errors.phone ? <div className="error-message">{formik.errors.phone}</div> : null}
+                    <input type="text" name="phone" placeholder="Phone" id="phone" onChange={formik.handleChange} value={formik.values.phone} />
+                </div>
+                <div>
+                    {formik.errors.address ? <div className="error-message">{formik.errors.address}</div> : null}
+                    <input type="text" name="address" placeholder="address" id="address" onChange={formik.handleChange} value={formik.values.address} />
+                </div>
+                <button type="submit">Proceed</button>
             </form>
 
             <p>

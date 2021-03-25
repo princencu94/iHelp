@@ -31,12 +31,13 @@
     .checkout-form-container {
         width:100%;
         margin-top: 2rem;
+
     }
 
     .checkout-form-container form input[type=text] { 
         padding:1rem;
         margin-bottom: 1rem;
-        width:91%;
+        width:90%;
         font-family: 'Poppins', sans-serif;
     }
 
