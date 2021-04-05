@@ -85,6 +85,7 @@ const Homepage = ({productsFetchStartAsnyc}) => {
                         <p>
                             The tech-centred company now has 4 branches in Harare namely Harare, Bulawayo, Mutare and Victoria Falls. iHelp Co-Founder and CEO is Munyaradzi Edson, and he has a wealth of experience in business development and marketing whilst Kudzai Gore is the Director and Head of Technical Support.
                         </p>
+                        
                     </div>
 
                     <div className="about-image">

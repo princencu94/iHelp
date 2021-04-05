@@ -13,9 +13,9 @@ const Footer = () => {
                 <div className="logo-section">
                     <h2>iHelp</h2>
                     <div className="social-media">
-                        <Link to="https://www.facebook.com/iHelpZimbabwe/"><FacebookIcon className="social-icon-size"/></Link>
-                        <Link to="https://twitter.com/ihelp_zimbabwe"><TwitterIcon className="social-icon social-icon-size"/></Link>
-                        <Link to="https://www.instagram.com/ihelpzimbabwe/"><InstagramIcon className="social-icon-size"/></Link>
+                        <a href="https://www.facebook.com/iHelpZimbabwe/" target="_blank"><FacebookIcon className="social-icon-size"/></a>
+                        <a href="https://twitter.com/ihelp_zimbabwe" target="_blank"><TwitterIcon className="social-icon social-icon-size"/></a>
+                        <a href="https://www.instagram.com/ihelpzimbabwe/" target="_blank"><InstagramIcon className="social-icon-size"/></a>
                     </div>
                 </div>
 

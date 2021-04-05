@@ -11,17 +11,20 @@
 .hero-info {
     margin-left: 5rem;
     position: relative;
-    bottom: 25rem;
+    bottom: 35rem;
     width:40%;
     z-index: 1;
 }
 
 .hero-info h1 {
     text-transform: uppercase;
+    font-size: 60px;
+    color:white;
 }
 
 .hero-info p {
     font-size: 20px;
+    color:white;
 }
 .products-button {
     padding:1rem 2rem 1rem 2rem;

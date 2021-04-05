@@ -507,7 +507,7 @@ const RepairsPage = ({ history,addRepair }) => {
                         </div>
                     
                         <div className="repairs-next-buttons">
-                            <Link to="tel:+263772999638">Call Store</Link>
+                            <a href="tel:0777864943">Call Store</a>
                             <button onClick={handleAppointment}>Make Appointment</button>
                         </div>
                     </div>
