@@ -5,6 +5,8 @@ import { connect } from 'react-redux';
 import { useFormik } from 'formik';
 import { useSnackbar } from 'notistack';
 
+import { clearCart } from '../../redux/cart/cart-actions';
+
 const validate = values => {
 
     const errors = {};
@@ -29,7 +31,7 @@ const validate = values => {
 };
  
 
-const CheckoutForm = ({ cartItems, cartTotal }) => {
+const CheckoutForm = ({ cartItems, cartTotal, clearCart }) => {
 
     var results = cartItems.map(cartItem => 
         ({
@@ -55,16 +57,16 @@ const CheckoutForm = ({ cartItems, cartTotal }) => {
                 name: values.name,
                 phone: values.phone,
                 address: values.address,
-                title: results.title,
-                quantity: results.quantity,
-                price: results.price,
+                orders: JSON.stringify(results),
                 total: cartTotal
             }
-                emailjs.send('service_r73mmhm','invoice_form', submissionInfo, 'user_IKYzdHEQlppNIWtfQVf6E')
+                emailjs.send('cart_service','invoice_form', submissionInfo, 'user_IKYzdHEQlppNIWtfQVf6E')
                 .then((response) => {
-                    enqueueSnackbar("Appointment Submitted", { 
+                    enqueueSnackbar("Your Cart Request has been submitted", { 
                         variant: 'success'});
-                    console.log('SUCCESS!', response.status, response.text);
+                    if(response.status === 200) {
+                        clearCart();
+                    }
                 }, (err) => {
                 console.log('FAILED...', err);
             });
@@ -105,4 +107,8 @@ const mapStateToProps = state => ({
     cartTotal: state.cart.cartItems.reduce((accumulator, cartItem) => accumulator + cartItem.price * cartItem.quantity, 0)
 })
 
-export default connect(mapStateToProps)(CheckoutForm);
+const mapDispatchToProps = dispatch => ({
+    clearCart: () => dispatch(clearCart())
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(CheckoutForm);
