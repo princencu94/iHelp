@@ -27,7 +27,7 @@ const RelatedItems = ({ related, id }) => {
         }
         console.log(allRelated)
         });
-    },[])
+    })
    
 
     return (

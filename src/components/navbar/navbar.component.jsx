@@ -3,7 +3,6 @@ import './navbar.styles.css';
 import { connect } from 'react-redux';
 
 import { Link, NavLink } from 'react-router-dom';
-import phone from '../../assets/phone.svg';
 import cartIcon from '../../assets/shopping-cart.svg';
 import Checkout from '../checkout/checkout.component';
 import Badge from '@material-ui/core/Badge';

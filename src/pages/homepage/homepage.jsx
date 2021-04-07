@@ -15,8 +15,8 @@ import Product from '../../components/product/product.component';
 import Sponsor from '../../components/sponsors/sponsors.component'
 import Navbar from '../../components/navbar/navbar.component';
 
-import { addCollectionAndDocuments } from "../../firebase/firebase-utils";
-import { featured, devices } from '../../shop-data/data';
+//import { addCollectionAndDocuments } from "../../firebase/firebase-utils";
+//import { featured, devices } from '../../shop-data/data';
 
 const Homepage = ({productsFetchStartAsnyc}) => {
 
@@ -45,7 +45,7 @@ const Homepage = ({productsFetchStartAsnyc}) => {
             setLoading(true);
         }
         });
-    }, [])
+    })
     return (
         <div className="homepage">
             <Navbar/>

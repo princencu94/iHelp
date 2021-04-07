@@ -16,7 +16,6 @@ import ClearIcon from '@material-ui/icons/Clear';
 
 import { connect } from 'react-redux';
 import { addItem, removeItem, clearCartItem } from '../../redux/cart/cart-actions';
-import { Link } from 'react-router-dom';
 
 const StyledTableRow = withStyles((theme) => ({
     root: {

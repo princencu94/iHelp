@@ -4,7 +4,6 @@ import Navbar from '../../components/navbar/navbar.component';
 import RepairsBanner from '../../components/repairs-banner/repairs-banner.component';
 import device from '../../assets/phone.svg';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import { Link } from 'react-router-dom';
 
 import carryIn from '../../assets/carry-in.png';
 import cubside from '../../assets/car.png';

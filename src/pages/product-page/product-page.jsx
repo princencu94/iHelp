@@ -35,5 +35,3 @@ const mapStateToProps = state => ({
 })
 export default connect(mapStateToProps)(ProductPage);
 
-{/* <img src="https://i.ibb.co/JcGQXst/watch-series-6.png" alt="watch-series-6" border="0">
-<img src="https://i.ibb.co/jgcRQ26/all-models-s5-b1wqs7qtdkfm-large.png" alt="all-models-s5-b1wqs7qtdkfm-large" border="0"></img> */}

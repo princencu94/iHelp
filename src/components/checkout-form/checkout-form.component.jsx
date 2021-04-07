@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './checkout-form.styles.css';
 import emailjs from 'emailjs-com';
 import { connect } from 'react-redux';
@@ -55,8 +55,10 @@ const CheckoutForm = ({ cartItems, cartTotal }) => {
                 name: values.name,
                 phone: values.phone,
                 address: values.address,
-                orders:JSON.stringify(results),
-                total:cartTotal
+                title: results.title,
+                quantity: results.quantity,
+                price: results.price,
+                total: cartTotal
             }
                 emailjs.send('service_r73mmhm','invoice_form', submissionInfo, 'user_IKYzdHEQlppNIWtfQVf6E')
                 .then((response) => {
