@@ -1,4 +1,5 @@
 import './App.css';
+import { connect } from 'react-redux';
 
 import Homepage from './pages/homepage/homepage';
 import SingleProduct from './pages/single-product/single-product';
@@ -10,14 +11,14 @@ import Footer from './components/footer/footer.component';
 import ProductPage from './pages/product-page/product-page';
 import FaqPage from './pages/faq/faq-page';
 import ContactUsPage from './pages/contact-us-page/contact-us-page';
-
+import Checkout from './components/checkout/checkout.component';
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
 
-function App() {
+function App({ toggleCart }) {
   return (
     <div className="App">
       
@@ -34,11 +35,21 @@ function App() {
           <Route exact path="/:category" component={ProductPage} />
           
         </Switch>
+        
         <Footer/>
+        {
+          toggleCart !== true ?
+          null :
+            <Checkout/>
+        }
       </Router>
       
     </div>
   );
 }
 
-export default App;
+const mapStateToProps = state =>({
+  toggleCart: state.cart.toggleCart
+})
+
+export default connect(mapStateToProps)(App);

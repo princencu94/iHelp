@@ -25,9 +25,9 @@ const RelatedItems = ({ related, id }) => {
         } else {
             setLoading(true);
         }
-        console.log(allRelated)
+   
         });
-    })
+    },[related])
    
 
     return (

@@ -30,7 +30,7 @@ const SingleProduct = () => {
     }, [id])
    
     
-    console.log(singleProduct)
+
     return (
         <div className="single-product-container">
             <Navbar/>

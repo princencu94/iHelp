@@ -15,6 +15,7 @@ import Product from '../../components/product/product.component';
 import Sponsor from '../../components/sponsors/sponsors.component'
 import Navbar from '../../components/navbar/navbar.component';
 
+
 //import { addCollectionAndDocuments } from "../../firebase/firebase-utils";
 //import { featured, devices } from '../../shop-data/data';
 
@@ -26,7 +27,7 @@ const Homepage = ({productsFetchStartAsnyc}) => {
     
 
     useEffect(() => {
-        //addCollectionAndDocuments('featured', featured);
+        //addCollectionAndDocuments('products', devices);
         productsFetchStartAsnyc();
 
        const Devices= firestore.collection("featured").orderBy("manufactured", "desc");
@@ -45,7 +46,7 @@ const Homepage = ({productsFetchStartAsnyc}) => {
             setLoading(true);
         }
         });
-    })
+    },[productsFetchStartAsnyc])
     return (
         <div className="homepage">
             <Navbar/>
@@ -82,10 +83,18 @@ const Homepage = ({productsFetchStartAsnyc}) => {
                         <p>
                             Founded in 2014 with an aim to sell authentic apple products and improve customer’s experience, iHelp is a tech-centred support firm whose special focus over the years has revolved around supplying all Apple products and other related technological devices and services. 
                         </p>
+
+                        <h1>Our Core Values</h1>
                         <p>
-                            The tech-centred company now has 4 branches in Harare namely Harare, Bulawayo, Mutare and Victoria Falls. iHelp Co-Founder and CEO is Munyaradzi Edson, and he has a wealth of experience in business development and marketing whilst Kudzai Gore is the Director and Head of Technical Support.
+                            Professionalism,
+                            Transparency,
+                            Honesty,
+                            Reliable,
+                            Efficiency and
+                            Exceptional customer service.
                         </p>
                         
+                      
                     </div>
 
                     <div className="about-image">

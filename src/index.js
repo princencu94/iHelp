@@ -19,7 +19,8 @@ ReactDOM.render(
     }}
     TransitionComponent={Slide}>
         <App />
-      </SnackbarProvider>
+      </SnackbarProvider> 
+      
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')

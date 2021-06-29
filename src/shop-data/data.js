@@ -480,7 +480,7 @@ export const devices = [
 
         {
             title:"iPhone 11",
-            price:1200,
+            price:950,
             description:[        
                 "Processor: Apple A13 Bionic (7 nm+)",
                 "RAM: 4 GB",
@@ -499,7 +499,48 @@ export const devices = [
             manufactured:"2019-09-20T00:00:00Z",
             colors:"Available upon order"
         },
-
+        {
+            title:"iPhone 11",
+            price:900,
+            description:[        
+                "Processor: Apple A13 Bionic (7 nm+)",
+                "RAM: 4 GB",
+                "Storage: 64 GB, 128 GB, 256 GB",
+                "Display: 6.1 inches",
+                "Camera: 12 MP (wide) + 12 MP (ultrawide)",
+                "Battery: Non-removable Li-Ion 3110 mAh battery + Fast battery charging 18W: 50% in 30 min",
+            ],
+            memory: "64 Gig",
+            stock: 3,
+            category:"iphone",
+            image:"https://i.ibb.co/RCmz9bx/iphone-11.jpg",
+            newProduct:false,
+            sn:"i021",
+            related:"iphone-11",
+            manufactured:"2019-09-20T00:00:00Z",
+            colors:"Available upon order"
+        },
+                {
+                    title:"iPhone 11 Pro",
+                    price:1000,
+                    description:[         
+                        "Display. Screen size (inches) 5.80. Touchscreen",
+                        "Hardware. Processor. hexa-core. Processor make",
+                        "Camera. Rear camera. 12-megapixel (f/1.8) + 12-megapixel (f/2.4) + 12-megapixel (f/2.0)",
+                        "Software. Operating system. iOS 13",
+                        "Connectivity. Wi-Fi. Yes",
+                        "Sensors. Face unlock. Yes"
+                    ],
+                    memory: "64 Gig",
+                    available: true,
+                    category:"iphone",
+                    image:"https://i.ibb.co/W2ddNbJ/iphone-11-Pro.jpg",
+                    newProduct:false,
+                    sn:"i022",
+                    related:"iphone-11",
+                    manufactured:"2019-09-20T00:00:00Z",
+                    colors:"Available upon order"
+                },
                 {
                     title:"iPhone 11 Pro",
                     price:1400,
@@ -517,6 +558,27 @@ export const devices = [
                     image:"https://i.ibb.co/W2ddNbJ/iphone-11-Pro.jpg",
                     newProduct:false,
                     sn:"i012",
+                    related:"iphone-11",
+                    manufactured:"2019-09-20T00:00:00Z",
+                    colors:"Available upon order"
+                },
+                {
+                    title:"iPhone 11 Pro Max",
+                    price:1150,
+                    description:[
+                        "Display. Screen size (inches) 6.50. Touchscreen.",
+                        "Hardware. Processor. hexa-core. Processor make",
+                        "Camera. Rear camera. 12-megapixel (f/1.8) + 12-megapixel (f/2.4) + 12-megapixel (f/2.0)",
+                        "Software. Operating system. iOS 13",
+                        "Connectivity. Wi-Fi. Yes",
+                        "Sensors. Face unlock. Yes"
+                    ],
+                    memory: "64 Gig",
+                    available: true,
+                    category:"iphone",
+                    image:"https://i.ibb.co/w4cYT0g/iphone-11-Pro-Max.jpg",
+                    newProduct:false,
+                    sn:"i023",
                     related:"iphone-11",
                     manufactured:"2019-09-20T00:00:00Z",
                     colors:"Available upon order"
@@ -562,10 +624,32 @@ export const devices = [
                     related:"iphone-11",
                     manufactured:"2019-09-20T00:00:00Z",
                     colors:"Available upon order"
-                },      
+                },    
+                {
+                    title:"iPhone 12",
+                    price:1100,
+                    description:[
+                        "iPhone 12 has 6.10-inch display and 1170x2532 pixels resolution",
+                        " Dual camera setup on rear with features like autofocus and more",
+                        " Front camera is of 12 MP",
+                        " Runs iOS 14",
+                        " 64GB inbuilt storage",
+                        " Dimensions of the phone are 146.70 mm x 71.50 mm x 7.40 mm; weight is 164 grams"
+                    ],
+                    memory: "64 Gig",
+                    available: true,
+                    category:"iphone",
+                    image:"https://i.ibb.co/LC24X54/iphone-12.jpg",
+                    newProduct:true,
+                    sn:"i015",
+                    related:"iphone-12",
+                    manufactured:"2020-10-23T00:00:00Z",
+                    colors:"Available upon order"
+                },
+                
         {
             title:"iPhone 12",
-            price:1550,
+            price:1200,
             description:[
                 "iPhone 12 has 6.10-inch display and 1170x2532 pixels resolution",
                 " Dual camera setup on rear with features like autofocus and more",
@@ -579,7 +663,28 @@ export const devices = [
             category:"iphone",
             image:"https://i.ibb.co/LC24X54/iphone-12.jpg",
             newProduct:true,
-            sn:"i015",
+            sn:"i026",
+            related:"iphone-12",
+            manufactured:"2020-10-23T00:00:00Z",
+            colors:"Available upon order"
+        },
+        {
+            title:"iPhone 12",
+            price:1250,
+            description:[
+                "iPhone 12 has 6.10-inch display and 1170x2532 pixels resolution",
+                " Dual camera setup on rear with features like autofocus and more",
+                " Front camera is of 12 MP",
+                " Runs iOS 14",
+                " 64GB inbuilt storage",
+                " Dimensions of the phone are 146.70 mm x 71.50 mm x 7.40 mm; weight is 164 grams"
+            ],
+            memory: "256 Gig",
+            available: true,
+            category:"iphone",
+            image:"https://i.ibb.co/LC24X54/iphone-12.jpg",
+            newProduct:true,
+            sn:"i024",
             related:"iphone-12",
             manufactured:"2020-10-23T00:00:00Z",
             colors:"Available upon order"
@@ -601,15 +706,34 @@ export const devices = [
             category:"iphone",
             image:"https://i.ibb.co/JtPbQXB/compare-iphone12-mini-black-32g32p2j7hem-large.jpg",
             newProduct:true,
-            sn:"i021",
+            sn:"i027",
             related:"iphone-12",
             manufactured:"2020-10-23T00:00:00Z",
             colors:"Available upon order"
         },
-        
+        {
+            title:"iPhone 12 Pro",
+            price:1350,
+            description:["iPhone 12 has 6.10-inch display and 1170x2532 pixels resolution.",
+                "Dual camera setup on rear with features like autofocus and more.",
+                "Front camera is of 12 MP.",
+                "Runs iOS 14.",
+                "64GB inbuilt storage.",
+                "Dimensions of the phone are 146.70 mm x 71.50 mm x 7.40 mm; weight is 164 grams."
+            ],
+            memory: "128 Gig",
+            available: true,
+            category:"iphone",
+            image:"https://i.ibb.co/H2LMyvB/compare-iphone12-pro-pacific-blue-brjnr8xyuewi-large.jpg",
+            newProduct:true,
+            sn:"i025",
+            related:"iphone-12",
+            manufactured:"2020-10-23T00:00:00Z",
+            colors:"Available upon order"
+        },
                 {
                     title:"iPhone 12 Pro",
-                    price:1800,
+                    price:1450,
                     description:["iPhone 12 has 6.10-inch display and 1170x2532 pixels resolution.",
                         "Dual camera setup on rear with features like autofocus and more.",
                         "Front camera is of 12 MP.",
@@ -649,7 +773,7 @@ export const devices = [
                 },
                 {
                     title:"iPhone 12 Pro Max",
-                    price:2000,
+                    price:1500,
                     description:[
                         "Pro 12MP camera system: Ultra Wide, Wide, and Telephoto cameras",
                         "Ultra Wide: ƒ/2.4 aperture and 120° field of view",
@@ -669,7 +793,7 @@ export const devices = [
                 },
                 {
                     title:"iPhone 12 Pro Max",
-                    price:2200,
+                    price:1600,
                     description:[
                         "Pro 12MP camera system: Ultra Wide, Wide, and Telephoto cameras",
                         "Ultra Wide: ƒ/2.4 aperture and 120° field of view",
@@ -689,7 +813,7 @@ export const devices = [
                 },
                 {
                     title:"iPhone 12 Pro Max",
-                    price:2400,
+                    price:1800,
                     description:[
                         "Pro 12MP camera system: Ultra Wide, Wide, and Telephoto cameras",
                         "Ultra Wide: ƒ/2.4 aperture and 120° field of view",
@@ -708,8 +832,50 @@ export const devices = [
                     colors:"Available upon order"
                 },
                 {
+                    title:"Apple Watch Series 3",
+                    price:380,
+                    description:["Built-in GPS and GLONASS",
+                    "Barometric altimeter",
+                    "Water resistant to 50 meters under ISO standard 22810:2010",
+                    "Heart rate sensor",
+                    "Accelerometer",
+                    "Gyroscope",
+                    "Ambient light sensor",
+                    "Siri speaks"],
+                    memory: "40mm",
+                    available: true,
+                    category:"apple-watch",
+                    image:"https://i.ibb.co/74YpmPL/watch-series-3.jpg",
+                    newProduct:false,
+                    sn:"iw004",
+                    related:"watch-3",
+                    manufactured:"2017-09-22T00:00:00Z",
+                    colors:"Available upon order"
+                },
+                {
+                    title:"Apple Watch Series 4",
+                    price:480,
+                    description:["GPS, GLONASS, Galileo, and QZSS",
+                    "Barometric altimeter",
+                    "Water resistant. 50 meters",
+                    "Electrical heart sensor",
+                    "Optical heart sensor",
+                    "Improved accelerometer. up to 32 g-forces",
+                    "Improved gyroscope",
+                    "Ambient light sensor"],
+                    memory: "42mm",
+                    available: true,
+                    category:"apple-watch",
+                    image:"https://i.ibb.co/rxxqQvT/watch-series-4.jpg",
+                    newProduct:false,
+                    sn:"iw005",
+                    related:"watch-4",
+                    manufactured:"2018-09-21T00:00:00Z",
+                    colors:"Available upon order"
+                },
+                {
                     title:"Apple Watch Series 5",
-                    price:650,
+                    price:550,
                     description:["GPS/GNSS",
                     "Compass",
                     "Barometric altimeter",
@@ -731,8 +897,31 @@ export const devices = [
                     colors:"Available upon order"
                 },
                 {
+                    title:"Apple Watch SE",
+                    price:550,
+                    description:["Water resistant Swimproof",
+                    "High and low heart rate notifications",
+                    "Irregular heart rhythm notification",
+                    "Emergency SOS",
+                    "International emergency calling",
+                    "Fall detection",
+                    "Available cellular connectivity",
+                    "Compass",
+                    "Always-on altimeter",
+                   ],
+                    memory: "42mm",
+                    available: true,
+                    category:"apple-watch",
+                    image:"https://i.ibb.co/h2NWmZg/all-models-se-fv5566w23je6-large.jpg",
+                    newProduct:false,
+                    sn:"iw006",
+                    related:"watch-SE",
+                    manufactured:"2020-09-18T00:00:00Z",
+                    colors:"Available upon order"
+                },
+                {
                     title:"Apple Watch Series 6",
-                    price:750,
+                    price:650,
                     description:["Accelerometer", 
                     "gyro", 
                     "heart rate (2nd gen)",
@@ -767,7 +956,7 @@ export const devices = [
                     category:"apple-watch",
                     image:"https://i.ibb.co/JcGQXst/watch-series-6.png",
                     newProduct:false,
-                    sn:"iw002",
+                    sn:"iw003",
                     related:"watch-6",
                     manufactured:"2020-09-18T00:00:00Z",
                     colors:"Available upon order"
@@ -1004,7 +1193,7 @@ export const devices = [
                     memory: 0,
                     available: true,
                     category:"accessories",
-                    image:"https://i.ibb.co/HY386fr/129907-5085-ipxr19-sty-clr-2.jpg",
+                    image:"https://i.ibb.co/c1xSnTB/shutter-glass.jpg",
                     newProduct:false,
                     sn:"ias005",
                     related:"tempered",
@@ -1022,7 +1211,7 @@ export const devices = [
                     memory: 0,
                     available: true,
                     category:"accessories",
-                    image:"https://i.ibb.co/HY386fr/129907-5085-ipxr19-sty-clr-2.jpg",
+                    image:"https://i.ibb.co/c1xSnTB/shutter-glass.jpg",
                     newProduct:false,
                     sn:"ias006",
                     related:"tempered",
@@ -1040,7 +1229,7 @@ export const devices = [
                     memory: 0,
                     available: true,
                     category:"accessories",
-                    image:"https://i.ibb.co/HY386fr/129907-5085-ipxr19-sty-clr-2.jpg",
+                    image:"https://i.ibb.co/c1xSnTB/shutter-glass.jpg",
                     newProduct:false,
                     sn:"ias007",
                     related:"tempered",
@@ -1058,7 +1247,7 @@ export const devices = [
                     memory: 0,
                     available: true,
                     category:"accessories",
-                    image:"https://i.ibb.co/HY386fr/129907-5085-ipxr19-sty-clr-2.jpg",
+                    image:"https://i.ibb.co/c1xSnTB/shutter-glass.jpg",
                     newProduct:false,
                     sn:"ias008",
                     related:"tempered",
@@ -1103,7 +1292,7 @@ export const devices = [
                     memory: 0,
                     available: true,
                     category:"accessories",
-                    image:"https://i.ibb.co/HVp4xbw/s-l1600.jpg",
+                    image:"https://i.ibb.co/f1g9dTw/clear-pouch.jpg",
                     newProduct:false,
                     sn:"ias011",
                     related:"clear",
@@ -1119,7 +1308,7 @@ export const devices = [
                     memory: 0,
                     available: true,
                     category:"accessories",
-                    image:"https://i.ibb.co/HVp4xbw/s-l1600.jpg",
+                    image:"https://i.ibb.co/f1g9dTw/clear-pouch.jpg",
                     newProduct:false,
                     sn:"ias012",
                     related:"clear",
@@ -1208,7 +1397,7 @@ export const devices = [
 export const featured = [
     {
         title:"iPhone 12",
-        price:1550,
+        price:1200,
         description:[
             "iPhone 12 has 6.10-inch display and 1170x2532 pixels resolution",
             " Dual camera setup on rear with features like autofocus and more",
@@ -1252,7 +1441,7 @@ export const featured = [
     
     {
         title:"iPhone 12 Pro",
-        price:2000,
+        price:1450,
         description:[
             "Pro 12MP camera system: Ultra Wide, Wide, and Telephoto cameras",
             "Ultra Wide: ƒ/2.4 aperture and 120° field of view",
@@ -1272,7 +1461,7 @@ export const featured = [
     },
     {
         title:"iPhone 12 Pro Max",
-        price:2000,
+        price:1500,
         description:[
             "Pro 12MP camera system: Ultra Wide, Wide, and Telephoto cameras",
             "Ultra Wide: ƒ/2.4 aperture and 120° field of view",
@@ -1292,7 +1481,7 @@ export const featured = [
     },
     {
         title:"Apple Watch Series 6",
-        price:750,
+        price:650,
         description:["Accelerometer", 
         "gyro", 
         "heart rate (2nd gen)",

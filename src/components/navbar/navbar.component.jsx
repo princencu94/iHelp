@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 
 import { Link, NavLink } from 'react-router-dom';
 import cartIcon from '../../assets/shopping-cart.svg';
-import Checkout from '../checkout/checkout.component';
 import Badge from '@material-ui/core/Badge';
 import DehazeIcon from '@material-ui/icons/Dehaze';
 import MobileNavbar from '../mobile-nav/mobile-nav.component';
@@ -64,12 +63,6 @@ const Navbar = ({ toggleCart, toggleHiddenCart, totalItems}) => {
                 <Badge badgeContent={totalItems} color="secondary">
                     <img src={cartIcon} alt="Cart Icon" onClick={toggleHiddenCart}/>
                 </Badge>
-                    
-                    {
-                        toggleCart === true ?
-                        <Checkout/>
-                        : null
-                    }
                    
                 </div>
                 </Responsive>
@@ -78,14 +71,7 @@ const Navbar = ({ toggleCart, toggleHiddenCart, totalItems}) => {
                         <div className="cart-link">
                             <Badge badgeContent={totalItems} color="secondary">
                                 <img src={cartIcon} alt="Cart Icon" onClick={toggleHiddenCart}/>
-                            </Badge>
-                                
-                                {
-                                    toggleCart === true ?
-                                    <Checkout/>
-                                    : null
-                                }
-                    
+                            </Badge>                    
                         </div>
                         <DehazeIcon className="hamburger" onClick={handleClickOpen}/>
                     </div>

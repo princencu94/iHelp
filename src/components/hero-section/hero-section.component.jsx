@@ -1,21 +1,56 @@
 import React from 'react';
 import './hero-section.styles.css';
-import heroImage2 from '../../assets/hero-3.jpg';
-import { Link } from 'react-router-dom';
 
-const HeroSection = ({ history }) => {
+import heroImage1 from '../../assets/banner_ihelp.jpg';
+import heroImage3 from '../../assets/banner_ihelp2.jpg';
+import heroImage4 from '../../assets/banner_ihelp3.jpg';
+import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBContainer } from
+"mdbreact";
+
+
+const HeroSection = () => {
     return (
         <div className="hero-container"> 
-            <img src={heroImage2} alt="Hero section" />
-            <div className="hero-info">
-                <h1>Phones also have doctors</h1>
-                <p>We are here to make sure that you get your device repaired as soon as possible, give us a shout.</p>
-
-                <div className="hero-buttons">
-                    <Link className="products-button" to="/products">Products</Link>
-                    <Link className="repairs-button" to="/services">Repairs</Link>
-                </div>
-            </div>
+            <MDBContainer>
+                <MDBCarousel
+                    activeItem={1}
+                    length={3}
+                    showControls={false}
+                    showIndicators={false}
+                    className="z-depth-1"
+                    slide
+                >
+                    <MDBCarouselInner>
+                    <MDBCarouselItem itemId="1">
+                        <MDBView>
+                        <img
+                            className="d-block w-100"
+                            src={heroImage1}
+                            alt="First slide"
+                        />
+                        </MDBView>
+                    </MDBCarouselItem>
+                    <MDBCarouselItem itemId="2">
+                        <MDBView>
+                        <img
+                            className="d-block w-100"
+                            src={heroImage3}
+                            alt="Second slide"
+                        />
+                        </MDBView>
+                    </MDBCarouselItem>
+                    <MDBCarouselItem itemId="3">
+                        <MDBView>
+                        <img
+                            className="d-block w-100"
+                            src={heroImage4}
+                            alt="Third slide"
+                        />
+                        </MDBView>
+                    </MDBCarouselItem>
+                    </MDBCarouselInner>
+                </MDBCarousel>
+            </MDBContainer>
         </div>
     )
 }

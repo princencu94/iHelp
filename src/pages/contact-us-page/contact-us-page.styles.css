@@ -25,11 +25,29 @@
 }
 
 .contact-details {
-    width:25%;
+    width:30%;
+    background-color: black;
+    margin-right: 0rem;
+}
+
+.contact-details h1 {
+    text-align: left;
+    color: white;
+    margin-left: 2rem;
 }
 
 .contact-details-header {
     background-color: #f2f2f2 !important;
+}
+
+.contact-details-sections {
+    margin-left: 2rem;
+    color: white;
+}
+
+.contact-details-sections p span a {
+    color:white;
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 600px) {
@@ -57,12 +75,30 @@
     }
 
     .contact-details {
-        width:90%;
-        margin-left: 1rem;
-        margin-right:2rem;
+        width:100%;
+        margin-left: 0rem;
+        margin-right:0rem;
+        margin-top: 2rem;
+    }
+
+
+    .contact-details h1 {
+        text-align: left;
+        color: white;
+        margin-left: 0rem;
     }
 
     .contact-details h1 {
         text-align: center;
+        color: white;
+    }
+    
+    .contact-details p, h3 {
+        text-align: center;
+    }
+
+    .contact-details-sections {
+        margin-left: 0rem;
+        color: white;
     }
 }

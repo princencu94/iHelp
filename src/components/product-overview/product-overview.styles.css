@@ -90,4 +90,9 @@
         cursor: pointer;
         font-size: 10px;
     }
+
+    .description {
+        text-align: center;
+        list-style-type: none;
+    }
 }

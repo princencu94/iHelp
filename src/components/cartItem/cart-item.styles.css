@@ -13,7 +13,7 @@
 }
 
 .cart-item-image img {
-    margin-left: -1.5rem;
+    margin-left: 0rem;
     width: 100%;
     height: auto;
 }
@@ -51,4 +51,16 @@
 
 .cart-item-remove p {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .cart-item-image img {
+        margin-left: 0rem !important;
+        width: 100%;
+        height: auto;
+    }
+
+    .cart-item-image {
+        margin-left: 1rem;
+    }
 }
