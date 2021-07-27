@@ -21,9 +21,8 @@ const ContactUsPage = () => {
 
                     <div className="contact-details-sections">
                         <h3>Head Office</h3>
-                        <p>6th Floor Green Bridge<br/>
-                            Northwing<br/>
-                            Eastgate, Harare
+                        <p>23 Rhodesville Road<br/>
+                            Eastlea<br/>
                         </p>
                         <p>
                             <span>< a href="tel:+263772999638">+263 772 999 638</a></span>
