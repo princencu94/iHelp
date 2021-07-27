@@ -68,11 +68,13 @@
 
 .product-overlay .overlay-button {
     background-color: black;
+    width:100%;
     color: white;
     padding:1rem 1rem 1rem 1rem;
     border: none;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
+    margin-left: 0rem;
 }
 
 @media only screen and (max-width: 600px) {
