@@ -56,6 +56,9 @@ const Navbar = ({ toggleCart, toggleHiddenCart, totalItems}) => {
                 <div className="services-link">
                     <NavLink activeClassName="selected" to="/services" >REPAIRS</NavLink>
                 </div>
+                <div className="blogs-link">
+                    <Link to="/blogs">BLOGS</Link>
+                </div>
                 <div>
                     <Link to="/contact-us">CONTACT US</Link>
                 </div>

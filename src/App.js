@@ -12,6 +12,8 @@ import ProductPage from './pages/product-page/product-page';
 import FaqPage from './pages/faq/faq-page';
 import ContactUsPage from './pages/contact-us-page/contact-us-page';
 import Checkout from './components/checkout/checkout.component';
+import Blogs from './pages/blogs/blog.page';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -33,7 +35,7 @@ function App({ toggleCart }) {
           <Route exact path="/faq" component={FaqPage} />
           <Route exact path="/contact-us" component={ContactUsPage} />
           <Route exact path="/:category" component={ProductPage} />
-          
+          <Route exact path="/blogs" component={Blogs} />
         </Switch>
         
         <Footer/>
