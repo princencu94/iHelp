@@ -26,6 +26,7 @@
     border: none;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
+    margin-left: 0rem;
 }
 
 .checkout-close {
@@ -50,26 +51,27 @@
 
 .list {
     width:400px;
+    
 }
 
 @media only screen and (max-width: 600px) {
-    .checkout-container {
-        background-color:#F2F2F2;
-        color:white;
-        position:absolute;
-        right:0.5rem;
-        bottom:6rem;
-        width:95%;
-        border:1px solid black;
-        min-height:50%;
-        z-index: 1000;
+    .MuiDrawer-paper {
+        min-height:100vh !important;
     }
 
     .checkout-proceed {
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 10px;
+        margin-top: 18em;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-end;
+        align-items: center;
     }
+
+    .list {
+        width:350px; 
+    }
+
     
     .checkout-proceed button{
         background-color: black;
@@ -79,6 +81,6 @@
         border: none;
         font-family: 'Poppins', sans-serif;
         cursor: pointer;
-        margin-left: 0;
+        margin-left: 5rem;
     }
 }

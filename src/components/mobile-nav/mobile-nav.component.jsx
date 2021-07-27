@@ -72,7 +72,6 @@ export default function MobileNavbar({handleClose, open}) {
                 </div>
               </div>
               <Link to="/services">Repairs</Link>
-              <Link to="/blogs">Blogs</Link>
               <Link to="/contact-us">Contact Us</Link>
             </div>
             
