@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# iHelp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a fullstack Web Application that was built on React, Firebase and Material UI for a Cell phone repairs Company 
 
 ## Available Scripts
 
