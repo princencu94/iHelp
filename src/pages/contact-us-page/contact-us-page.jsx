@@ -29,6 +29,11 @@ const ContactUsPage = () => {
                             <br/>
                             <span>< a href="tel:+263773668980">+263 773 668 980</a></span>
                         </p>
+                        <h3>Landlines</h3>
+                        <p>
+                        <span><a href="tel:0242443020">0242443020</a></span> <br/>
+                        <span><a href="tel:0242443019">0242443019</a></span>
+                        </p>
                     </div>
                 </div>
             </div>
