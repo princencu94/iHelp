@@ -12,12 +12,13 @@ const ProductOverview = ({ item, addItem }) => {
             {   item !== undefined ?
                 <div className="product-overview">
                 <div className="product-overview-image">
-                    <img src={image} alt=""/>
+                    <img src={image} alt={title}/>
                 </div>
 
                 <div className="product-overview-detail">
                     <h1>{title}</h1>
                     <div>
+                        <ul>
                         {
                             item.description !== undefined ?
                             item.description.map(lst =>
@@ -26,6 +27,7 @@ const ProductOverview = ({ item, addItem }) => {
                             :
                             null
                         }
+                        </ul>
                     </div>
                     <p className="detail-line"><span>{memory === 0 ? null : memory}</span></p>
                     <p>{`Colours ${colors}`}</p>

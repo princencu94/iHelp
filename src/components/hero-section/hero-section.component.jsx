@@ -24,10 +24,14 @@ const HeroSection = () => {
                     <MDBCarouselItem itemId="1">
                         <MDBView>
                         <img
-                            className="d-block w-100"
+                            className="d-block w-100 h-auto"
                             src={heroImage1}
                             alt="First slide"
                         />
+                        <div class="carousel-text">
+                            <h3 class="h3-carousel-text">iPhone 14 Pro</h3>
+                            <p class="p-carousel-text">Pro.Beyond.</p>  
+                        </div>
                         </MDBView>
                     </MDBCarouselItem>
                     <MDBCarouselItem itemId="2">
@@ -37,6 +41,10 @@ const HeroSection = () => {
                             src={heroImage3}
                             alt="Second slide"
                         />
+                        <div class="carousel-text">
+                            <h3 class="h3-carousel-text">Apple Watch Ultra</h3>
+                            <p class="p-carousel-text">Adventure awaits</p>  
+                        </div>
                         </MDBView>
                     </MDBCarouselItem>
                     <MDBCarouselItem itemId="3">
@@ -46,6 +54,10 @@ const HeroSection = () => {
                             src={heroImage4}
                             alt="Third slide"
                         />
+                        <div class="carousel-text">
+                            <h3 class="h3-carousel-text">MacBook Air</h3>
+                            <p class="p-carousel-text">Don’t take it lightly.</p>  
+                        </div>
                         </MDBView>
                     </MDBCarouselItem>
                     </MDBCarouselInner>
